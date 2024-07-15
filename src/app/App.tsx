@@ -1,15 +1,16 @@
-import { Footer } from '../shared/ui/Footer/Footer';
-import { Header } from '../shared/ui/Header/Header';
-import { Main } from '../shared/ui/Main/Main';
+import { BurgerProvider } from '../shared/contexts/BurgerProvider'
+import { Footer } from '../widgets/Footer/Footer'
+import { Header } from '../widgets/Header/Header'
+import { Main } from '../widgets/Main/Main'
 
 export const App = () => {
   return (
-    <>
+    <BurgerProvider>
       <Header />
       <Main>
         <p>Main content</p>
       </Main>
       <Footer />
-    </>
+    </BurgerProvider>
   );
 };
