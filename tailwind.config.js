@@ -44,6 +44,8 @@ export default {
         danger20: '#3E0000',
         danger10: '#3E0000',
       },
+
+      fontFamily: { body: [`Roboto`, `Azeret Mono`] },
     },
 
     screens: {
