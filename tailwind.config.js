@@ -45,7 +45,10 @@ export default {
         danger10: '#3E0000',
       },
 
-      fontFamily: { body: [`Roboto`, `Azeret Mono`] },
+      fontFamily: {
+        azeret: ['Azeret Mono"', 'monospace'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
 
     screens: {
