@@ -4,6 +4,6 @@ interface Props {
   children: ReactNode;
 }
 
-export const Main = ({ children }: Props) => {
-  return <div>{children}</div>;
+export const ActionBar = ({ children }: Props) => {
+  return <>{children}</>;
 };
