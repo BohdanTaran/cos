@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'header-topper': "url('public/header-topper.jpg')",
+        'header-topper': "url('/header-topper.jpg')",
       },
       colors: {
         "primary": {
