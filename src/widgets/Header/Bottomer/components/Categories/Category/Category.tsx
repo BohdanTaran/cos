@@ -1,4 +1,4 @@
-import { ArrowIcon } from '../../../../../../../shared/Icons/ArrowIcon';
+import { ArrowIcon } from '../../../../../../shared/Icons/ArrowIcon'
 
 interface Props {
   name: string;

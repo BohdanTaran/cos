@@ -1,9 +1,9 @@
-import { ActionBar } from '../../../widgets/Header/Bottomer/components/ActionBar/ActionBar'
-import { Categories } from '../../../widgets/Header/Bottomer/components/Categories/Categories'
-import { SwitchCurrency } from '../../../widgets/Header/Topper/components/SwitchCurrency/SwitchCurrency'
-import { SwitchLanguage } from '../../../widgets/Header/Topper/components/SwitchLanguage/SwitchLanguage'
-import { useBurger } from '../../contexts/BurgerProvider'
-import { CloseBurgerIcon } from '../../Icons/CloseBurgerIcon'
+import { CloseBurgerIcon } from '../../shared/Icons/CloseBurgerIcon'
+import { ActionBar } from '../Header/Bottomer/components/ActionBar'
+import { Categories } from '../Header/Bottomer/components/Categories/Categories'
+import { SwitchCurrency } from '../Header/Topper/components/SwitchCurrency/SwitchCurrency'
+import { SwitchLanguage } from '../Header/Topper/components/SwitchLanguage/SwitchLanguage'
+import { useBurger } from './useBurger'
 
 
 export const BurgerMenu = () => {
@@ -25,7 +25,7 @@ export const BurgerMenu = () => {
           <div className="space-y-4 h-screen">
             <Categories />
             <ActionBar>
-              <nav className="bg-primary10 text-[#56565E]">
+              <nav className="bg-primary-10 text-[#56565E]">
                 <ul className="p-5 flex flex-col space-y-5 font-roboto">
                   <li>About us</li>
                   <li>Support center</li>

@@ -1,4 +1,4 @@
-import { Category } from './Category/ui/Category'
+import { Category } from './Category/Category'
 
 export const Categories = () => {
   return (

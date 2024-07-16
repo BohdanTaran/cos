@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { ArrowIcon } from '../../../../../shared/Icons/ArrowIcon';
-import { sliceInfo } from '../../helpers/sliceInfo';
 
 const ads = [
   {
@@ -44,8 +43,8 @@ export const AdSlider = () => {
         <ArrowIcon color={'white'} styles={'w-6'} />
       </button>
       <div className="space-x-3">
-        <span>{sliceInfo(ads[currentIndex].text)}</span>
-        <a href="#" className="text-primary20">
+        <span>{ads[currentIndex].text.split(' ').slice(0, 9).join(' ')}</span>
+        <a href="#" className="text-primary-20">
           Learn more
         </a>
       </div>

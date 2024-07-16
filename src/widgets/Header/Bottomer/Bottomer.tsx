@@ -1,11 +1,11 @@
-import { useBurger } from '../../../shared/contexts/BurgerProvider'
 import { HeaderHeartIcon } from '../../../shared/Icons/HeaderHeartIcon'
 import { HeaderToteIcon } from '../../../shared/Icons/HeaderToteIcon'
 import { HeaderUserIcon } from '../../../shared/Icons/HeaderUserIcon'
 import { OpenBurgerIcon } from '../../../shared/Icons/OpenBurgerIcon'
-import { ActionBar } from './components/ActionBar/ActionBar'
-import { Navigation } from './components/Navigation/Navigation'
-import { Search } from './components/Search/Search'
+import { useBurger } from '../../BurgerMenu/useBurger'
+import { ActionBar } from './components/ActionBar'
+import { Navigation } from './components/Navigation'
+import { Search } from './components/Search'
 
 export const Bottomer = () => {
   const { setBurgerIsOpen } = useBurger();
@@ -34,11 +34,11 @@ export const Bottomer = () => {
                   <HeaderUserIcon styles="w-8 laptop:w-10" />
                 </button>
                 <button className="relative">
-                  <span className="absolute inline-flex items-center justify-center w-2 h-2 border border-solid border-white ms-2 text-[10px] font-light text-white bg-primary50 rounded-full"></span>
+                  <span className="absolute inline-flex items-center justify-center w-2 h-2 border border-solid border-white ms-2 text-[10px] font-light text-white bg-primary-50 rounded-full"></span>
                   <HeaderHeartIcon styles="w-6 laptop:w-10" />
                 </button>
                 <button className="relative">
-                  <span className="absolute inline-flex items-center justify-center w-4 h-4 border border-solid border-white ms-2 text-[10px] font-light text-white bg-primary50 rounded-full">
+                  <span className="absolute inline-flex items-center justify-center w-4 h-4 border border-solid border-white ms-2 text-[10px] font-light text-white bg-primary-50 rounded-full">
                     99
                   </span>
                   <HeaderToteIcon styles="w-7 laptop:w-10" />
