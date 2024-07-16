@@ -8,7 +8,6 @@ export const Header = () => {
 
   return (
     <>
-      {/* for remove */}
       {burgerIsOpen && <BurgerMenu />}
       <Topper />
       <Bottomer />
