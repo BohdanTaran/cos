@@ -6,7 +6,7 @@ import ProductLabel from './ProductLabel'
 
 const ProductCard = () => {
 	return (
-    <div className="relative flex flex-col w-[164px] h-[290px] font-roboto laptop:w-[312px] laptop:h-[477px]">
+    <div className="relative shadow-product-card flex flex-col min-w-[164px] h-[290px] font-roboto laptop:min-w-[312px] laptop:h-[477px]">
       <div>
         <HeaderHeartIcon styles="w-5 absolute right-3 top-2 laptop:right-5 laptop:top-4 laptop:w-6" />
         <ProductLabel type={'EXCLUSIVE'} />

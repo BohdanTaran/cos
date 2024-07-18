@@ -1,9 +1,9 @@
-import ProductCard from '../../entities/ProductCard/components/ProductCard'
+import ProductList from '../../widgets/ProductList/ProductList'
 
 const HomePage = () => {
 	return (
 		<>
-			<ProductCard/>
+			<ProductList />
 		</>
 	)
 }
