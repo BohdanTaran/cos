@@ -56,6 +56,9 @@ export default {
           10: '#3E0000',
         },
       },
+      boxShadow: {
+        'product-card': '0 2px 6px 0 rgba(144, 144, 144, 0.15)',
+      },
     },
     screens: {
       phone: '320px',

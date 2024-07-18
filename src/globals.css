@@ -15,3 +15,17 @@
 body {
   height: 100%;
 }
+
+.product-list-scrollbar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.product-list-scrollbar::-webkit-scrollbar-track {
+  @apply bg-neutral-20;
+  border-radius: 10px;
+}
+
+.product-list-scrollbar::-webkit-scrollbar-thumb {
+  background: #9747FF;
+  border-radius: 10px;
+}
