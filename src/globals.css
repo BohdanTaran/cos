@@ -11,3 +11,7 @@
   text-decoration: none;
   list-style: none;
 }
+
+body {
+  height: 100%;
+}
