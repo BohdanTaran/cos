@@ -1,11 +1,10 @@
 interface Props {
-  type: string;
+  label: string;
 }
 
-const ProductLabel = ({type}: Props) => {
-
+const ProductLabel = ({ label }: Props) => {
   const backgroundLabel = () => {
-    switch (type) {
+    switch (label) {
       case 'EXCLUSIVE':
         return 'bg-product-label-exclusive';
       case 'NEW':
@@ -15,7 +14,7 @@ const ProductLabel = ({type}: Props) => {
       case 'LIMITED':
         return 'bg-product-label-limited';
     }
-  }
+  };
 
   return (
     <div
@@ -26,7 +25,7 @@ const ProductLabel = ({type}: Props) => {
       }}
       className={`pr-3 absolute top-[-14px] left-[8px] max-w-[101px] h-[14px] flex items-center text-[10px] transform rotate-90 text-white ${backgroundLabel()} bg-cover bg-left-bottom laptop:top-[-28px] laptop:left-[15px] laptop:h-[27px] laptop:text-sm laptop:font-medium`}
     >
-      <span className="ml-1 laptop:ml-2">{type}</span>
+      <span className="ml-1 laptop:ml-2">{label}</span>
     </div>
   );
 };
