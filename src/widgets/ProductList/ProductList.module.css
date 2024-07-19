@@ -1,0 +1,19 @@
+.productScrollBar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.productScrollBar::-webkit-scrollbar-track {
+  @apply bg-neutral-20;
+  border-radius: 10px;
+}
+
+.productScrollBar::-webkit-scrollbar-thumb {
+  background: #9747FF;
+  border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+  .productScrollBar::-webkit-scrollbar-track {
+    margin: 0 200px;
+  }
+}
