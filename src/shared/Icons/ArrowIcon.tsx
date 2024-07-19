@@ -2,13 +2,14 @@ interface Props {
   isRight?: boolean;
   styles?: string;
   color?: string;
+  size?: number
 }
 
-export const ArrowIcon = ({ isRight, styles, color }: Props) => {
+export const ArrowIcon = ({ isRight, styles, color, size }: Props) => {
   return (
     <svg
       width="12"
-      height="19"
+      height={size ? size : 19}
       viewBox="0 0 12 19"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
