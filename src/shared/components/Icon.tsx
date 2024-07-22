@@ -5,7 +5,7 @@ interface Props {
   size?: number;
 }
 
-const Icon = ({ color, size, icon }: Props) => {
+const Icon = ({ icon, color, size }: Props) => {
   return (
     <svg className={`fill-text-${color} w-[${size}px]`}>
       <use href={`${svgSprite}#${icon}`} />
