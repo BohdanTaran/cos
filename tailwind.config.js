@@ -66,6 +66,9 @@ export default {
           20: '#3E0000',
           10: '#3E0000',
         },
+        text: {
+          secondary: '#56565E',
+        },
       },
       boxShadow: {
         'product-card': '0 2px 6px 0 rgba(144, 144, 144, 0.15)',
