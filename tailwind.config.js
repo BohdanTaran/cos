@@ -67,6 +67,7 @@ export default {
           10: '#3E0000',
         },
         text: {
+          tertiary: '#9898A0',
           secondary: '#56565E',
         },
       },

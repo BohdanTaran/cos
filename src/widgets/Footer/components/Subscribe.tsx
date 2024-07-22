@@ -1,4 +1,4 @@
-import svgSprite from '../../shared/Icons/icons.svg';
+import svgSprite from '../../../shared/';
 
 export const Subscribe = () => {
   return (
@@ -6,9 +6,7 @@ export const Subscribe = () => {
       <div className="font-azeret text-lg font-medium color-text-secondary text-center">
         SUBSCRIBE TO OUR NEWSLETTER
       </div>
-      <svg className="fill-primary-70 w-[25px]">
-        <use href={`${svgSprite}#icon-rocket`} />
-      </svg>
+
       <input
         className="h-[40px] w-[200px] w-full text-sm border border-solid rounded-lg pl-10 outline-none"
         type="text"
