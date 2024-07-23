@@ -7,15 +7,11 @@ const Contacts = () => {
         CONTACTS
       </div>
       <div className="flex flex-row items-center gap-1 mt-3 text-text-secondary">
-        <Icon styles="icon-phone color-secondary w-16" />
+        <Icon icon="phone" color="secondary" size={16} />
         (219) 555-0114
       </div>
       <div className="flex flex-row items-center gap-1 mt-2 text-text-secondary">
-        {
-          <svg className="fill-text-secondary w-[16px]">
-            <use href={`${svgSprite}#icon-email`} />
-          </svg>
-        }
+        <Icon icon="email" color="secondary" size={16} />
         info@gmail.com
       </div>
     </div>
