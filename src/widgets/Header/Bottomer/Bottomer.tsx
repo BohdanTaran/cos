@@ -1,11 +1,9 @@
-import { HeaderHeartIcon } from '../../../shared/Icons/HeaderHeartIcon'
-import { HeaderToteIcon } from '../../../shared/Icons/HeaderToteIcon'
-import { HeaderUserIcon } from '../../../shared/Icons/HeaderUserIcon'
-import { OpenBurgerIcon } from '../../../shared/Icons/OpenBurgerIcon'
-import { useBurger } from '../../BurgerMenu/useBurger'
-import { ActionBar } from './components/ActionBar'
-import { Navigation } from './components/Navigation'
-import { Search } from './components/Search'
+import Icon from '../../../shared/components/Icon';
+import { OpenBurgerIcon } from '../../../shared/Icons/OpenBurgerIcon';
+import { useBurger } from '../../BurgerMenu/useBurger';
+import { ActionBar } from './components/ActionBar';
+import { Navigation } from './components/Navigation';
+import { Search } from './components/Search';
 
 export const Bottomer = () => {
   const { setBurgerIsOpen } = useBurger();
@@ -31,17 +29,35 @@ export const Bottomer = () => {
               />
               <div className="flex items-center phone:space-x-5 laptop:space-x-4">
                 <button>
-                  <HeaderUserIcon styles="w-8 laptop:w-10" />
+                  <Icon
+                    icon="user"
+                    size={'w-[26px] h-[26px] laptop:w-[36px] laptop:h-[36px]'}
+                    color="transparent"
+                    outlineColor="black"
+                    outlineWidth={1}
+                  />
                 </button>
                 <button className="relative">
-                  <span className="absolute inline-flex items-center justify-center w-2 h-2 border border-solid border-white ms-2 text-[10px] font-light text-white bg-primary-50 rounded-full"></span>
-                  <HeaderHeartIcon styles="w-6 laptop:w-10" />
+                  <span className="absolute inline-flex items-center justify-center w-2 h-2 border border-solid border-white ms-1.5 text-[10px] font-light text-white bg-primary-50 rounded-full"></span>
+                  <Icon
+                    icon="heart"
+                    size={'w-[26px] h-[26px] laptop:w-[36px] laptop:h-[36px]'}
+                    color="transparent"
+                    outlineColor="black"
+                    outlineWidth={1.2}
+                  />
                 </button>
                 <button className="relative">
                   <span className="absolute inline-flex items-center justify-center w-4 h-4 border border-solid border-white ms-2 text-[10px] font-light text-white bg-primary-50 rounded-full">
                     99
                   </span>
-                  <HeaderToteIcon styles="w-7 laptop:w-10" />
+                  <Icon
+                    icon="shopping-cart"
+                    size={'w-[26px] h-[26px] laptop:w-[36px] laptop:h-[36px]'}
+                    color="transparent"
+                    outlineColor="black"
+                    outlineWidth={1.2}
+                  />
                 </button>
               </div>
             </div>
