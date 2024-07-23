@@ -1,6 +1,6 @@
-import { ArrowIcon } from '../../../../../shared/Icons/ArrowIcon'
-import { useAdvertisements } from './hooks/useAdvertisements'
-import { useSlider } from './hooks/useSlider'
+import Icon from '../../../../../shared/components/Icon';
+import { useAdvertisements } from './hooks/useAdvertisements';
+import { useSlider } from './hooks/useSlider';
 
 export const AdSlider = () => {
   const { advertisements, isLoading } = useAdvertisements();
@@ -9,9 +9,9 @@ export const AdSlider = () => {
   );
 
   return (
-    <div className="w-full flex justify-center text-xs text-center space-x-4 tablet:space-x-6 laptop:text-base">
+    <div className="min-w-[295px] flex justify-between text-xs text-center space-x-4 tablet:space-x-6 laptop:text-base">
       <button onClick={swipeToPrevInfo}>
-        <ArrowIcon color={'white'} styles={'w-6'} />
+        <Icon icon="arrow-left" size="w-5 h-5" color="white" />
       </button>
       <div className="space-x-3">
         {!isLoading ? (
@@ -34,7 +34,7 @@ export const AdSlider = () => {
         )}
       </div>
       <button onClick={swipeToNextInfo}>
-        <ArrowIcon color={'white'} styles={'w-6'} isRight={true} />
+        <Icon icon="arrow_right" size="w-5 h-5" color="white" />
       </button>
     </div>
   );
