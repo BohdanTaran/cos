@@ -34,7 +34,7 @@ export const AdSlider = () => {
         )}
       </div>
       <button onClick={swipeToNextInfo}>
-        <Icon icon="arrow_right" size="w-5 h-5" color="white" />
+        <Icon icon="arrow-right" size="w-5 h-5" color="white" />
       </button>
     </div>
   );
