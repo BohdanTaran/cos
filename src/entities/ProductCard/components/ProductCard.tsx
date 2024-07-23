@@ -1,4 +1,5 @@
 import ProductCardImage from '../../../../public/ProductCardImg.jpg';
+import Icon from '../../../shared/components/Icon';
 import Image from '../../../shared/components/Image';
 import ProductLabel from './ProductLabel';
 
@@ -10,7 +11,15 @@ const ProductCard = ({ label }: Props) => {
   return (
     <div className="relative shadow-product-card flex flex-col min-w-[164px] max-w-[164px] min-h-[290px] max-h-[290px] font-roboto laptop:min-w-[312px] laptop:max-w-[312px] laptop:min-h-[477px] laptop:max-h-[477px]">
       <div>
-        {/* <HeaderHeartIcon styles="w-5 absolute right-3 top-2 laptop:right-5 laptop:top-4 laptop:w-6" /> */}
+        <div className="absolute right-3 top-2 laptop:right-5 laptop:top-4">
+          <Icon
+            icon="heart"
+            size={'w-[24px] h-[24px]'}
+            color="transparent"
+            outlineColor="black"
+            outlineWidth={1.2}
+          />
+        </div>
         <ProductLabel label={label} />
         <Image src={ProductCardImage} styles="w-full" />
       </div>
@@ -28,8 +37,14 @@ const ProductCard = ({ label }: Props) => {
               1,720
             </span> */}
           </div>
-          <button className="bg-primary-10 w-14 h-8 flex justify-center rounded-md laptop:hidden">
-            {/* <HeaderToteIcon styles="w-5" /> */}
+          <button className="bg-primary-10 w-14 h-8 flex justify-center items-center rounded-md laptop:hidden">
+            <Icon
+              icon="shopping-cart"
+              size={'w-[16px] h-[16px]'}
+              color="transparent"
+              outlineColor="black"
+              outlineWidth={3}
+            />
           </button>
         </div>
       </div>
