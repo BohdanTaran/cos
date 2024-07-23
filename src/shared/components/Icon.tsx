@@ -1,13 +1,20 @@
 import svgSprite from '../../../public/icons.svg';
 interface Props {
   icon: string;
-  color?: string;
-  size?: number;
+  color: string;
+  size: string;
+  outlineColor?: string;
+  outlineWidth?: number;
 }
 
-const Icon = ({ icon, color, size }: Props) => {
+const Icon = ({ icon, color, outlineColor, size, outlineWidth = 0 }: Props) => {
   return (
-    <svg className={`fill-text-${color} w-[${size}px]`}>
+    <svg
+      fill={color}
+      className={size}
+      stroke={outlineColor}
+      style={{ strokeWidth: outlineWidth }}
+    >
       <use href={`${svgSprite}#${icon}`} />
     </svg>
   );
