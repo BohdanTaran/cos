@@ -8,9 +8,10 @@ import { Subscribe } from './components/Subscribe';
 export const Footer = () => {
   return (
     <div className="bg-white w-[375px] flex-col  ">
-      <Subscribe       <svg className="fill-primary-70 w-[25px]">
-        <use href={`${svgSprite}#icon-rocket`} />
-      </svg>/>
+      <Subscribe />
+     { <svg className="fill-primary-70 w-[25px]">
+        <use href={`${svgSprite}#icon-rocket`} 
+      </svg>}
       <div className="bg-secondary-10 px-5 pt-10 pb-4">
         <CustomerCare />
         <QuickLnks />
