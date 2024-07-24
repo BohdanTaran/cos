@@ -15,7 +15,7 @@ const ProductCard = ({ label }: Props) => {
           <Icon
             icon="heart"
             size={'w-[24px] h-[24px]'}
-            color="transparent"
+            color="fill-transparent"
             outlineColor="black"
             outlineWidth={1.2}
           />
@@ -41,7 +41,7 @@ const ProductCard = ({ label }: Props) => {
             <Icon
               icon="shopping-cart"
               size={'w-[16px] h-[16px]'}
-              color="transparent"
+              color="fill-transparent"
               outlineColor="black"
               outlineWidth={3}
             />
