@@ -1,5 +1,4 @@
 import Icon from '../../../shared/components/Icon';
-import { OpenBurgerIcon } from '../../../shared/Icons/OpenBurgerIcon';
 import { useBurger } from '../../BurgerMenu/useBurger';
 import { ActionBar } from './components/ActionBar';
 import { Navigation } from './components/Navigation';
@@ -16,9 +15,14 @@ export const Bottomer = () => {
     <>
       <div className="flex justify-center sticky top-[0px] h-[60px] items-center z-40 bg-white laptop:h-[104px]">
         <div className="flex w-11/12 justify-between">
-          <div className="flex space-x-4 laptop:space-x-0">
+          <div className="flex item space-x-4 laptop:space-x-0">
             <button onClick={openBurgerMenu}>
-              <OpenBurgerIcon styles="w-7 laptop:hidden" />
+              <Icon
+                icon="burgerMenu-open"
+                size={'w-[28px] h-[28px]'}
+                color="fill-black"
+                styles=" laptop:hidden"
+              />
             </button>
             <Navigation />
           </div>
@@ -32,7 +36,7 @@ export const Bottomer = () => {
                   <Icon
                     icon="user"
                     size={'w-[26px] h-[26px] laptop:w-[36px] laptop:h-[36px]'}
-                    color="transparent"
+                    color="fill-transparent"
                     outlineColor="black"
                     outlineWidth={1}
                   />
@@ -42,7 +46,7 @@ export const Bottomer = () => {
                   <Icon
                     icon="heart"
                     size={'w-[26px] h-[26px] laptop:w-[36px] laptop:h-[36px]'}
-                    color="transparent"
+                    color="fill-transparent"
                     outlineColor="black"
                     outlineWidth={1.2}
                   />
@@ -54,7 +58,7 @@ export const Bottomer = () => {
                   <Icon
                     icon="shopping-cart"
                     size={'w-[26px] h-[26px] laptop:w-[36px] laptop:h-[36px]'}
-                    color="transparent"
+                    color="fill-transparent"
                     outlineColor="black"
                     outlineWidth={1.2}
                   />
