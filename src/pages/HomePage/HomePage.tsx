@@ -1,10 +1,12 @@
-import ProductList from '../../widgets/ProductList/ProductList'
+import Categories from '../../widgets/Categories/Categories';
+import ProductList from '../../widgets/ProductList/ProductList';
 
 const HomePage = () => {
-	return (
-		<>
-			<ProductList />
-		</>
-	)
-}
-export default HomePage
+  return (
+    <>
+      <ProductList />
+      <Categories />
+    </>
+  );
+};
+export default HomePage;
