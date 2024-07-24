@@ -1,7 +1,7 @@
 import svgSprite from '../../../public/icons.svg';
 interface Props {
   icon: string;
-  color: string;
+  color?: string;
   size: string;
   outlineColor?: string;
   outlineWidth?: number;
