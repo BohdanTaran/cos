@@ -19,7 +19,7 @@ const ProductList = () => {
   };
 
   return (
-    <div className="relative flex justify-center">
+    <>
       <button
         className="hidden laptop:block absolute top-1/2 left-2 desktop-xl:left-5"
         onClick={scrollLeft}
@@ -28,7 +28,7 @@ const ProductList = () => {
       </button>
       <div
         ref={sliderRef}
-        className={`${styles.productScrollBar} flex w-11/12 overflow-x-auto pb-6 product-list-scrollbar space-x-2 laptop:space-x-5 laptop:pb-10`}
+        className={`${styles.productScrollBar} flex overflow-x-auto pb-6 product-list-scrollbar space-x-2 laptop:space-x-5 laptop:pb-10`}
       >
         <ProductCard label={'EXCLUSIVE'} />
         <ProductCard label={'EXCLUSIVE'} />
@@ -44,7 +44,7 @@ const ProductList = () => {
       >
         <Icon icon="arrow-right" size="w-[24px] h-[24px]" color="#767680" />
       </button>
-    </div>
+    </>
   );
 };
 export default ProductList;
