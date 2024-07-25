@@ -37,7 +37,7 @@ export const Bottomer = () => {
                     icon="user"
                     size={'w-[26px] h-[26px] laptop:w-[36px] laptop:h-[36px]'}
                     color="fill-transparent"
-                    outlineColor="black"
+                    outlineColor="stroke-neutral-70"
                     outlineWidth={1}
                   />
                 </button>
@@ -47,7 +47,7 @@ export const Bottomer = () => {
                     icon="heart"
                     size={'w-[26px] h-[26px] laptop:w-[36px] laptop:h-[36px]'}
                     color="fill-transparent"
-                    outlineColor="black"
+                    outlineColor="stroke-neutral-70"
                     outlineWidth={1.2}
                   />
                 </button>
@@ -59,7 +59,7 @@ export const Bottomer = () => {
                     icon="shopping-cart"
                     size={'w-[26px] h-[26px] laptop:w-[36px] laptop:h-[36px]'}
                     color="fill-transparent"
-                    outlineColor="black"
+                    outlineColor="stroke-neutral-70"
                     outlineWidth={1.2}
                   />
                 </button>
