@@ -7,7 +7,7 @@ import { Subscribe } from './components/Subscribe';
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col justify-center bg-secondary-10 px-5 pt-10 pb-4 w-[375px]">
+    <div className="flex flex-col bg-secondary-10 px-5 pt-10 pb-4 w-[375px]">
       <CustomerCare />
       <QuickLnks />
       <Contacts />

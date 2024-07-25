@@ -12,14 +12,21 @@ export const Subscribe = () => {
           type="text"
           placeholder="Your Email"
         />
-        <Icon icon="rocket" color="neutral-30" size={'w-[24px] h-[24px]'} />
+        <Icon
+          icon="rocket"
+          color="transparent"
+          size={'w-[24px] h-[24px]'}
+          outlineColor="{`[neutral-30]`}"
+        />
       </div>
       <button
         type="button"
-        className="font-roboto text-sm font-normal text-neutral-20 hover:text-primary-20 border border-solid border-neutral-20 hover:border-none rounded-md mt-4 p-1 pl-4 pr-4"
+        className="font-roboto text-sm font-normal text-neutral-20 hover:text-primary-20 border border-solid border-neutral-20 hover:border-transparent rounded-md mt-4 p-1 pl-4 pr-4"
       >
         Subscribe
       </button>
     </div>
   );
 };
+
+//className = `${size} text-${color}`;
