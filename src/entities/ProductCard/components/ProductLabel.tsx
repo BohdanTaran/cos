@@ -1,5 +1,5 @@
 interface Props {
-  label: string;
+  label?: string;
 }
 
 const ProductLabel = ({ label }: Props) => {

@@ -1,10 +1,12 @@
-import ProductList from '../../widgets/ProductList/ProductList'
+import Carousel from '../../widgets/Carousel/Carousel';
+import Categories from '../../widgets/Categories/Categories';
 
 const HomePage = () => {
-	return (
-		<>
-			<ProductList />
-		</>
-	)
-}
-export default HomePage
+  return (
+    <>
+      <Carousel title="Featured sets" />
+      <Categories />
+    </>
+  );
+};
+export default HomePage;
