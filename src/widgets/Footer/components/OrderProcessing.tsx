@@ -1,6 +1,6 @@
 const OrderProcessing = () => {
   return (
-    <div className="flex flex-col justify-star mb-13">
+    <div className="flex flex-col justify-start mb-13">
       <div className="font-roboto text-xs font-medium text-text-tertiary">
         ORDER PROCESSING
       </div>

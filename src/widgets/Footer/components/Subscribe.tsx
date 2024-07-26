@@ -14,9 +14,8 @@ export const Subscribe = () => {
         />
         <Icon
           icon="rocket"
-          color="transparent"
+          color="fill-neutral-30"
           size={'w-[24px] h-[24px]'}
-          outlineColor="{`[neutral-30]`}"
         />
       </div>
       <button
@@ -28,5 +27,3 @@ export const Subscribe = () => {
     </div>
   );
 };
-
-//className = `${size} text-${color}`;

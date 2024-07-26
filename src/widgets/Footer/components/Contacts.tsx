@@ -2,7 +2,7 @@ import Icon from '../../../shared/components/Icon';
 
 const Contacts = () => {
   return (
-    <div className="flex flex-col justify-start">
+    <div className="flex flex-col">
       <div className="font-roboto text-xs font-medium text-text-tertiary">
         CONTACTS
       </div>
