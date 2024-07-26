@@ -1,3 +1,9 @@
+import CustomerCare from './components/CustomerCare';
+
 export const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <div>
+      <CustomerCare />
+    </div>
+  );
 };
