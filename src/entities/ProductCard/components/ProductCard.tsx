@@ -42,7 +42,7 @@ const ProductCard = ({ label }: Props) => {
               icon="shopping-cart"
               size={'w-[16px] h-[16px]'}
               color="fill-transparent"
-              outlineColor="black"
+              outlineColor="stroke-neutral-70"
               outlineWidth={3}
             />
           </button>
