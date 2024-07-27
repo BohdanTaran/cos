@@ -1,4 +1,3 @@
-import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 import Contacts from './components/Contacts';
@@ -6,9 +5,7 @@ import CustomerCareList from './components/CustomerCareList';
 import FollowUs from './components/FollowUs';
 import OrderProcessing from './components/OrderProcessing';
 import Policies from './components/Policies';
-
-import { Subscribe } from './components/Subscribe';
-
+import Subscribe from './components/Subscribe';
 import FooterComponent from './components/FooterComponent';
 import QuickLinksList from './components/QuickLinksList';
 

@@ -1,9 +1,9 @@
 import Icon from '../../../shared/components/Icon';
 
-export const Subscribe = () => {
+const Subscribe = () => {
   return (
     <div className="text-center pt-10 mb-12 laptop:mt-4 ">
-      <p className="font-azeret text-base font-medium text-neutral-50 text-center  ">
+      <p className="font-azeret text-base font-medium text-neutral-50 text-center">
         SUBSCRIBE&nbsp;TO&nbsp;OUR&nbsp;NEWSLETTER
       </p>
       <form>
@@ -31,3 +31,4 @@ export const Subscribe = () => {
     </div>
   );
 };
+export default Subscribe;
