@@ -18,8 +18,7 @@ const Icon = ({
 }: Props) => {
   return (
     <svg
-      className={`${size} ${color} ${styles}`}
-      stroke={outlineColor}
+      className={`${size} ${color} ${outlineColor} ${styles}`}
       style={{ strokeWidth: outlineWidth }}
     >
       <use href={`${svgSprite}#${icon}`} />

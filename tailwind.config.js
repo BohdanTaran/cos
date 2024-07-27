@@ -9,6 +9,7 @@ export default {
         'product-label-new': "url('/bg-ProductLabel-new.png')",
         'product-label-limited': "url('/bg-ProductLabel-limited.png')",
         'product-label-sale': "url('/bg-ProductLabel-sale.png')",
+        'sale-section': "url('/bg-sale-section.png')",
       },
       colors: {
         primary: {
