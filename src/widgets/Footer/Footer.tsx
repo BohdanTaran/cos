@@ -1,5 +1,3 @@
-import { useMediaQuery } from 'react-responsive';
-
 import Contacts from './components/Contacts';
 import CustomerCareList from './components/CustomerCareList';
 import FollowUs from './components/FollowUs';
@@ -8,10 +6,10 @@ import Policies from './components/Policies';
 import Subscribe from './components/Subscribe';
 import FooterComponent from './components/FooterComponent';
 import QuickLinksList from './components/QuickLinksList';
+import useIsMobile from '../../contexts/MediaQueryContext';
 
 export const Footer = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 640px)' });
-
+  const isMobile = useIsMobile();
   return (
     <div className="flex flex-col bg-secondary-10">
       <div className={`pt-10 px-5 pb-4 ${!isMobile ? 'pt-20 px-18 pb-8' : ''}`}>
