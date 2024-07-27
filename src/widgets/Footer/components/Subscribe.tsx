@@ -2,9 +2,9 @@ import Icon from '../../../shared/components/Icon';
 
 export const Subscribe = () => {
   return (
-    <div className="text-center px-5 pt-10">
-      <p className="font-azeret text-base font-medium text-text-secondary text-center">
-        SUBSCRIBE TO OUR NEWSLETTER
+    <div className="text-center pt-10 mb-12 laptop:mt-4 ">
+      <p className="font-azeret text-base font-medium text-neutral-50 text-center  ">
+        SUBSCRIBE&nbsp;TO&nbsp;OUR&nbsp;NEWSLETTER
       </p>
       <form>
         <div className="flex flex-row justify-items-start items-center gap-2 h-[40px] mt-6 w-full bg-white text-sm border border-solid rounded-lg pl-3 pr-2 outline-none">
@@ -19,12 +19,14 @@ export const Subscribe = () => {
             size={'w-[24px] h-[24px]'}
           />
         </div>
-        <button
-          type="submit"
-          className="font-roboto text-sm font-normal text-neutral-20 focus:text-primary-20 border border-solid border-neutral-20 hover:border-transparent rounded-md mt-4 p-1 pl-4 pr-4"
-        >
-          Subscribe
-        </button>
+        <div className="flex justify-center mt-6 laptop:justify-end laptop:mt-3">
+          <button
+            type="submit"
+            className="font-roboto text-sm font-normal text-neutral-20 focus:text-primary-40 hover:border-transparent rounded-md p-1 pl-4 pr-4"
+          >
+            Subscribe
+          </button>
+        </div>
       </form>
     </div>
   );

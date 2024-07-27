@@ -4,7 +4,7 @@ const OrderProcessing = () => {
       <p className="font-roboto text-xs font-medium text-text-tertiary">
         ORDER PROCESSING
       </p>
-      <div className="flex flex-row items-center gap-1 mt-3 font-base text-base text-text-secondary">
+      <div className="flex flex-row items-center gap-1 mt-4 font-base text-base text-neutral-50">
         Mon-Fri: <br />
         6:30 am to 6:00 pm
       </div>
