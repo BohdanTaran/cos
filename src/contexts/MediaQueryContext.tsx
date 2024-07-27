@@ -1,8 +1,12 @@
 import { useMediaQuery } from 'react-responsive';
 
-const useIsMobile = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 640px)' });
-  return isMobile;
+interface UseIsDeviceProps {
+  query: string;
+}
+
+const useIsDevice = ({ query }: UseIsDeviceProps) => {
+  const isDevice = useMediaQuery({ query });
+  return isDevice;
 };
 
-export default useIsMobile;
+export default useIsDevice;
