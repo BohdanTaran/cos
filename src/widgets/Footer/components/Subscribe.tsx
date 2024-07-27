@@ -9,7 +9,7 @@ export const Subscribe = () => {
       <form>
         <div className="flex flex-row justify-items-start items-center gap-2 h-[40px] mt-6 w-full bg-white text-sm border border-solid rounded-lg pl-3 pr-2 outline-none">
           <input
-            className="h-[40px] w-full text-sm outline-neutral-10 bg-transparent"
+            className="h-[40px] w-full text-sm outline-neutral-10 bg-white opacity-5"
             type="text"
             placeholder="Your Email"
           />
