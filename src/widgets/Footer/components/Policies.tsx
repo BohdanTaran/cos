@@ -1,6 +1,6 @@
 const Policies = () => {
   return (
-    <div className="flex flex-col font-normal text-text-tertiary justify-center text-center">
+    <div className="flex flex-col font-normal text-tertiary justify-center text-center">
       <div className="flex flex-col items-center laptop:flex-row laptop:justify-between">
         <p className="text-sm  text-center laptop:mt-0 laptop:text:start">
           Product specifications, prices, ship dates, and availability are

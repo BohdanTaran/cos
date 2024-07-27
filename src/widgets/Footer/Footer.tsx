@@ -10,7 +10,7 @@ import FooterComponent from './components/FooterComponent';
 import QuickLinksList from './components/QuickLinksList';
 
 export const Footer = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 640px)' });
 
   return (
     <div className="flex flex-col bg-secondary-10">
