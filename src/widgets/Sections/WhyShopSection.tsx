@@ -2,7 +2,7 @@ import Icon from '../../shared/components/Icon';
 
 const WhyShopSection = () => {
   return (
-    <div className="flex justify-center py-10">
+    <div className="flex justify-center py-20">
       <div className="w-11/12 text-center">
         <div className="flex flex-col items-center gap-6">
           <span className="text-xl font-bold font-azeret text-neutral-90">
