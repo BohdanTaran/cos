@@ -9,8 +9,8 @@ export const Topper = () => {
         <div className="relative flex justify-center w-11/12">
           <AdSlider />
           <div className='hidden laptop:flex laptop:h-full items-center absolute right-0 space-x-8 text-base'>
-            <SwitchLanguage isBurger={false} />
-            <SwitchCurrency isBurger={false} />
+            <SwitchLanguage isBurger={false} /> // use isMobile instead (from context)
+            <SwitchCurrency isBurger={false} /> // use isMobile instead (from context)
           </div>
         </div>
       </div>

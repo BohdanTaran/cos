@@ -22,7 +22,7 @@ export const Footer = () => {
           availability are subject to change without notice.
         </div>
         <div className="text-xs text-center font-normal text-text-tertiary justify-center items-center mt-4">
-          Privacy Policy | Terms & Conditions | Accessibility Statement
+          Privacy Policy | Terms & Conditions | Accessibility Statement // This should be list of links. | should be a border specified with styles
         </div>
         <div className="text-xs text-center font-normal text-text-tertiary justify-center items-center mt-12">
           2024 - All Rights Reserved

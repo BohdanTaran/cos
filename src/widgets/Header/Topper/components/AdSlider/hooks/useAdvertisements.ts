@@ -11,7 +11,7 @@ export const useAdvertisements = () => {
     const fetchAds = async () => {
       try {
         setIsLoading(true);
-        const { data } = await axiosInstance.get('/ads/all');
+        const { data } = await axiosInstance.get('/ads/all'); // move all api requests to a separate file (api folder)
         setAdvertisements(data);
       } catch (error) {
         if (error instanceof Error) {
@@ -24,9 +24,10 @@ export const useAdvertisements = () => {
       }
     };
 
-    fetchAds();
+    fetchAds(); // try IIFE
   }, []);
 
+  // this should be in useEffect hook, errror as a dependency
   if (error) {
     console.error('Error:', error);
   }

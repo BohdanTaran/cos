@@ -9,7 +9,9 @@ export const Header = () => {
   return (
     <>
       {burgerIsOpen && <BurgerMenu />}
+
       <Topper />
+      
       <Bottomer />
     </>
   );

@@ -1,12 +1,13 @@
 import Icon from '../../../../../shared/components/Icon';
 
 interface Props {
-  isBurger: boolean;
+  isBurger: boolean; // use isMobile instead (from context)
 }
 
 export const SwitchCurrency = ({ isBurger }: Props) => {
   return (
     <>
+     // same as fixes as in SwitchLanguage appliable here
       {!isBurger && (
         <button className="flex items-center text-neutral-90">
           USD

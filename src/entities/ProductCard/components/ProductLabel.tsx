@@ -5,7 +5,7 @@ interface Props {
 const ProductLabel = ({ label }: Props) => {
   const backgroundLabel = () => {
     switch (label) {
-      case 'EXCLUSIVE':
+      case 'EXCLUSIVE': // move this to contats
         return 'bg-product-label-exclusive';
       case 'NEW':
         return 'bg-product-label-new';

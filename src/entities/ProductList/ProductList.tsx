@@ -30,7 +30,7 @@ const ProductList = () => {
         ref={sliderRef}
         className={`${styles.productScrollBar} flex overflow-x-auto pb-6 product-list-scrollbar space-x-2 laptop:space-x-5 laptop:pb-10`}
       >
-        <ProductCard label={'EXCLUSIVE'} />
+        <ProductCard label={'EXCLUSIVE'} /> // labels should be in constants
         <ProductCard label={'EXCLUSIVE'} />
         <ProductCard label={'SALE'} />
         <ProductCard />

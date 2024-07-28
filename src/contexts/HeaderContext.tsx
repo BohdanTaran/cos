@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useState } from 'react'
 
-export interface BurgerContextType {
+export interface BurgerContextType { // file and component should have the same names. Either Burger context or HeaderContext
   burgerIsOpen: boolean;
   setBurgerIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
