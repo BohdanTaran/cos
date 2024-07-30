@@ -1,4 +1,5 @@
-import ProductList from '../../entities/ProductList/ProductList'
+import ProductList from '../../entities/ProductList/ProductList';
+import ContentLayout from '../../shared/layouts/ContentLayout';
 
 interface Props {
   title: string;
@@ -6,8 +7,8 @@ interface Props {
 
 const Carousel = ({ title }: Props) => {
   return (
-    <div className="flex justify-center relative pb-5 laptop:pb-16">
-      <div className="w-11/12">
+    <ContentLayout isRelative={true}>
+      <div className='pb-5 laptop:pb-16'>
         <div className="flex justify-between py-5 laptop:py-16">
           <span className="font-azeret font-medium text-base laptop:text-3xl">
             {title}
@@ -21,7 +22,7 @@ const Carousel = ({ title }: Props) => {
         </div>
         <ProductList />
       </div>
-    </div>
+    </ContentLayout>
   );
 };
 export default Carousel;
