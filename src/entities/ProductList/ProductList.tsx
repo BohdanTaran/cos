@@ -24,7 +24,7 @@ const ProductList = () => {
         className="hidden laptop:block absolute top-1/2 left-2 desktop-xl:left-5"
         onClick={scrollLeft}
       >
-        <Icon icon="arrow-left" size="w-[24px] h-[24px]" color="#767680" />
+        <Icon icon="arrow-left" size="w-[24px] h-[24px]" color="fill-neutral-30" />
       </button>
       <div
         ref={sliderRef}
@@ -42,7 +42,7 @@ const ProductList = () => {
         className="hidden laptop:block absolute top-1/2 right-2 desktop-xl:right-5"
         onClick={scrollRight}
       >
-        <Icon icon="arrow-right" size="w-[24px] h-[24px]" color="#767680" />
+        <Icon icon="arrow-right" size="w-[24px] h-[24px]" color="fill-neutral-30" />
       </button>
     </>
   );
