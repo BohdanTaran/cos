@@ -31,7 +31,7 @@ const ProductList = () => {
         className={`${styles.productScrollBar} flex overflow-x-auto pb-6 product-list-scrollbar space-x-2 laptop:space-x-5 laptop:pb-10`}
       >
         <ProductCard label={'EXCLUSIVE'} />
-        <ProductCard label={'EXCLUSIVE'} />
+        <ProductCard label={'LIMITED'} />
         <ProductCard label={'SALE'} />
         <ProductCard />
         <ProductCard label={'SALE'} />

@@ -1,5 +1,7 @@
+import { ProductLabelType } from '../../../constants/ProductLabelConstants';
+
 interface Props {
-  label?: string;
+  label?: ProductLabelType;
 }
 
 const ProductLabel = ({ label }: Props) => {
