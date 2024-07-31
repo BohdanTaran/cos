@@ -22,7 +22,7 @@ const ProductCard = ({ label }: Props) => {
           />
         </div>
         <ProductLabel label={label} />
-        <Image src={ProductCardImage} styles="w-full aspect-square" />
+        <Image src={ProductCardImage} styles="w-full" />
       </div>
       <div className="p-2 laptop:px-4">
         <strong className="text-sm laptop:text-lg">
