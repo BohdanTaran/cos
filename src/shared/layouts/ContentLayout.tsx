@@ -8,7 +8,7 @@ interface Props {
 const ContentLayout = ({ children, isRelative }: Props) => {
   return (
     <div className={`${isRelative && 'relative'} w-full h-full flex justify-center`}>
-      <div className="w-11/12">{children}</div>
+      <div className="w-full px-3 laptop:px-[72px]">{children}</div>
     </div>
   );
 };
