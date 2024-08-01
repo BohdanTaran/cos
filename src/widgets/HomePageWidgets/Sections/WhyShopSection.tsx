@@ -1,9 +1,10 @@
-import Icon from '../../shared/components/Icon';
+import Icon from '../../../shared/components/Icon';
+import ContentLayout from '../../../shared/layouts/ContentLayout';
 
 const WhyShopSection = () => {
   return (
-    <div className="flex justify-center py-10 laptop:py-20">
-      <div className="w-11/12 text-center">
+    <ContentLayout>
+      <div className="py-10 text-center laptop:py-20">
         <div className="flex flex-col items-center gap-6">
           <span className="text-xl font-bold font-azeret text-neutral-90">
             WHY SHOP AT (SHOP NAME)?
@@ -55,7 +56,7 @@ const WhyShopSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </ContentLayout>
   );
 };
 export default WhyShopSection;

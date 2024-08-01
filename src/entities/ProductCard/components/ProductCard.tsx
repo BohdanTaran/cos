@@ -1,10 +1,11 @@
 import ProductCardImage from '../../../../public/ProductCardImg.jpg';
+import { ProductLabelType } from '../../../constants/ProductLabelConstants';
 import Icon from '../../../shared/components/Icon';
 import Image from '../../../shared/components/Image';
 import ProductLabel from './ProductLabel';
 
 interface Props {
-  label?: string;
+  label?: ProductLabelType;
 }
 
 const ProductCard = ({ label }: Props) => {
