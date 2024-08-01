@@ -7,22 +7,24 @@ interface Props {
 
 const Carousel = ({ title }: Props) => {
   return (
-    <ContentLayout isRelative={true}>
-      <div className='pb-5 laptop:pb-16'>
-        <div className="flex justify-between py-5 laptop:py-16">
-          <span className="font-azeret font-medium text-base laptop:text-3xl">
-            {title}
-          </span>
-          <a
-            href="#"
-            className="text-primary-40 font-roboto text-sm font-normal laptop:text-base laptop:font-medium"
-          >
-            View All
-          </a>
+    <div className='relative'>
+      <ContentLayout>
+        <div className="pb-5 laptop:pb-16">
+          <div className="flex justify-between py-5 laptop:py-16">
+            <span className="font-azeret font-medium text-base laptop:text-3xl">
+              {title}
+            </span>
+            <a
+              href="#"
+              className="text-primary-40 font-roboto text-sm font-normal laptop:text-base laptop:font-medium"
+            >
+              View All
+            </a>
+          </div>
+          <ProductList />
         </div>
-        <ProductList />
-      </div>
-    </ContentLayout>
+      </ContentLayout>
+    </div>
   );
 };
 export default Carousel;

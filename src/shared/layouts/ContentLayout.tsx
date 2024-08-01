@@ -2,12 +2,11 @@ import { ReactNode } from 'react';
 
 interface Props {
   children: ReactNode;
-	isRelative?: boolean;
 }
 
-const ContentLayout = ({ children, isRelative }: Props) => {
+const ContentLayout = ({ children }: Props) => {
   return (
-    <div className={`${isRelative && 'relative'} w-full h-full flex justify-center`}>
+    <div className="w-full h-full flex justify-center">
       <div className="w-full px-3 laptop:px-[72px]">{children}</div>
     </div>
   );
