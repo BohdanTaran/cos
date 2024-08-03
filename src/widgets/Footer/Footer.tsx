@@ -6,12 +6,11 @@ import Policies from './components/Policies';
 import Subscribe from './components/Subscribe';
 import FooterComponent from './components/FooterComponent';
 import QuickLinksList from './components/QuickLinksList';
-import useIsDevice from '../../contexts/MediaQueryContext';
+import { useIsDevice } from '../../contexts/MediaQueryContext';
 
 export const Footer = () => {
-  const isLaptop = useIsDevice({
-    query: `(max-width: 1024px)`,
-  });
+  const { isLaptop } = useIsDevice();
+
   return (
     <div className="flex flex-col bg-secondary-10">
       <div className={`pt-10 px-5 pb-4 ${!isLaptop ? 'pt-20 px-18 pb-8' : ''}`}>
