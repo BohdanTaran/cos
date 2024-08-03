@@ -3,7 +3,7 @@ import Icon from '../../../shared/components/Icon';
 const FollowUs = () => {
   return (
     <div className="flex flex-col text-center justify-center mt-12 laptop:mt-0 laptop:text-start">
-      <p className="font-azeret font-medium text-neutral-50">FOLLOW US</p>
+      <p className="font-azeret font-medium text-neutral-50 uppercase">Follow us</p>
       <div className="flex flex-row text-center justify-center gap-8 mt-8 laptop:text-start laptop:gap-6">
         <Icon
           icon="twitter"

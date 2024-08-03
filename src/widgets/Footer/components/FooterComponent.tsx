@@ -13,7 +13,7 @@ const FooterComponent: React.FC<FooterProps> = ({ text, SomeList }) => {
   return (
     <div className="flex flex-col mb-6">
       <div className="flex flex-row justify-between items-center  ">
-        <h2 className="font-azeret text-lg font-medium text-neutral-50 text-lg font-medium">
+        <h2 className="font-azeret text-lg font-medium text-neutral-50 text-lg font-medium uppercase">
           {text}
         </h2>
         <div className="" onClick={handleClick}>

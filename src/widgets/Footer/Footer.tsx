@@ -6,10 +6,14 @@ import Policies from './components/Policies';
 import Subscribe from './components/Subscribe';
 import FooterComponent from './components/FooterComponent';
 import QuickLinksList from './components/QuickLinksList';
-import { useIsDevice } from '../../contexts/MediaQueryContext';
+import {
+  MediaQueryContext,
+  MediaQueryProvider,
+} from '../../contexts/MediaQueryContext';
+import { useContext } from 'react';
 
 export const Footer = () => {
-  const { isLaptop } = useIsDevice();
+  const { isLaptop } = useContext(MediaQueryContext);
 
   return (
     <div className="flex flex-col bg-secondary-10">
@@ -17,10 +21,10 @@ export const Footer = () => {
         {isLaptop ? (
           <div className="flex flex-col">
             <FooterComponent
-              text="CUSTOMER CARE"
+              text="Customer care"
               SomeList={<CustomerCareList />}
             />
-            <FooterComponent text="QUICK LINKS" SomeList={<QuickLinksList />} />
+            <FooterComponent text="Quick links" SomeList={<QuickLinksList />} />
 
             <Contacts />
             <OrderProcessing />
