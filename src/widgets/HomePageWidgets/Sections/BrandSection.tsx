@@ -14,6 +14,7 @@ const BrandSection = () => {
         <Image src="../../../../public/marvel.png" styles="w-24" />
         <Image src="../../../../public/funko.png" styles="w-24" />
         <Image src="../../../../public/starwars.png" styles="w-24" />
+        <Image src="../../../../public/starwars.png" styles="w-24" />
       </div>
     </ContentLayout>
   );
