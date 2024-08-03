@@ -12,7 +12,7 @@ export const AdSlider = () => {
           <>
             <span className="text-neutral-90">
               {advertisements[currentIndex]?.text
-                .split(' ')
+                ?.split(' ')
                 .slice(0, 9)
                 .join(' ')}
             </span>
