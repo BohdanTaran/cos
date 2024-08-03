@@ -13,8 +13,8 @@ export const Bottomer = () => {
 
   return (
     <>
-      <div className="flex justify-center sticky top-[0px] h-[60px] items-center z-40 bg-white laptop:h-[104px]">
-        <div className="flex w-11/12 justify-between">
+      <div className="px-3 py-2.5 flex justify-center sticky top-[0px] h-[60px] items-center z-40 bg-white laptop:h-[104px] laptop:px-[72px]">
+        <div className="w-full flex justify-between">
           <div className="flex item space-x-4 laptop:space-x-0">
             <button onClick={openBurgerMenu}>
               <Icon
@@ -70,7 +70,9 @@ export const Bottomer = () => {
       </div>
       <div className="flex justify-center">
         <Search
-          styles={'relative w-11/12 mb-3 flex items-center laptop:hidden'}
+          styles={
+            'relative w-full px-3 py-2.5 mb-3 flex items-center laptop:hidden'
+          }
         />
       </div>
     </>

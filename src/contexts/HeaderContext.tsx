@@ -1,11 +1,13 @@
-import { createContext, ReactNode, useState } from 'react'
+import { createContext, ReactNode, useState } from 'react';
 
-export interface BurgerContextType {
+export interface HeaderContextType {
   burgerIsOpen: boolean;
   setBurgerIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const BurgerContext = createContext<BurgerContextType | undefined>(undefined);
+export const BurgerContext = createContext<HeaderContextType | undefined>(
+  undefined,
+);
 
 interface BurgerProviderProps {
   children: ReactNode;
