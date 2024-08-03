@@ -36,7 +36,7 @@ const ProductSliderSection = () => {
                 </div>
               </div>
               <div className="relative h-full flex justify-center">
-                <div className="w-full max-w-[430px] bg-white/10 rounded-full">
+                <div className="w-full max-w-[380px] aspect-square bg-white/10 rounded-full">
                   <Swiper
                     modules={[Navigation, Pagination]}
                     slidesPerView={1}
@@ -49,7 +49,7 @@ const ProductSliderSection = () => {
                       nextEl: '.button-next-slide',
                       prevEl: '.button-prev-slide',
                     }}
-                    className="relative w-full h-full p-2.5"
+                    className=" w-full h-full p-2.5"
                   >
                     <button className="button-prev-slide z-10 absolute left-0.5 top-1/2">
                       <Icon
@@ -79,9 +79,10 @@ const ProductSliderSection = () => {
                     </button>
                   </Swiper>
                 </div>
-                {/* Pagination of slider */}
-                <div className="swiper-pagination absolute bottom-0"></div>
+                
               </div>
+              {/* Pagination of slider */}
+              <div className="swiper-pagination static bottom-0"></div>
             </div>
           </div>
         </ContentLayout>
