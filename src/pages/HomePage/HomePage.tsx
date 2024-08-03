@@ -1,5 +1,6 @@
 import Carousel from '../../widgets/Carousel/Carousel';
 import Categories from '../../widgets/HomePageWidgets/Categories/Categories';
+import ProductSliderSection from '../../widgets/HomePageWidgets/Sections/ProductSliderSection'
 import SaleSection from '../../widgets/HomePageWidgets/Sections/SaleSection';
 import WhyShopSection from '../../widgets/HomePageWidgets/Sections/WhyShopSection';
 
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Carousel title="Featured sets" />
       <Categories />
       <SaleSection />
+      <ProductSliderSection />
       <WhyShopSection />
     </>
   );
