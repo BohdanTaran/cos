@@ -1,7 +1,7 @@
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Icon from '../../../../../shared/components/Icon';
 import Image from '../../../../../shared/components/Image';
+import ProductSectionSliderButtons from './ProductSectionSliderButtons';
 
 const ProductSectionSlider = () => {
   return (
@@ -22,13 +22,7 @@ const ProductSectionSlider = () => {
             }}
             className=" w-full h-full p-2.5"
           >
-            <button className="button-prev-slide z-10 absolute left-0.5 top-1/2">
-              <Icon
-                icon="arrow-left"
-                color="fill-neutral-30"
-                styles="w-5 h-5 laptop:w-7 h-7"
-              />
-            </button>
+            <ProductSectionSliderButtons />
             <SwiperSlide className="flex justify-center items-center">
               <Image
                 src="../../../../public/ProductSection-Item.png"
@@ -41,13 +35,6 @@ const ProductSectionSlider = () => {
                 styles="w-11/12 h-5/6 max-w-[356px] max-h-[320px] laptop:max-w-[400px] max-h-[420px] desktop:max-w-[500px] max-h-[520px]"
               />
             </SwiperSlide>
-            <button className="button-next-slide z-10 absolute right-0.5 top-1/2">
-              <Icon
-                icon="arrow-right"
-                color="fill-neutral-30"
-                styles="w-5 h-5 laptop:w-7 h-7"
-              />
-            </button>
           </Swiper>
         </div>
       </div>
