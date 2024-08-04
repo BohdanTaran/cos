@@ -2,7 +2,7 @@ const ProductSectionText = () => {
   return (
     <div className="pb-6 flex flex-col laptop:w-[46%] desktop:w-[35%] desktop-xl:w-[45%]">
       <div className="flex flex-col space-y-2 pb-6">
-        <span className="text-xs text-neutral-70 font-roboto font-medium laptop:text-lg desktop-xl:text-2xl">
+        <span className="uppercase text-xs text-neutral-70 font-roboto font-medium laptop:text-lg desktop-xl:text-2xl">
           FUNKO FUSION FUNKO POP!
         </span>
         <h2 className="font-azeret text-xl text-neutral-20 font-bold uppercase laptop:text-xl desktop-xl:text-3xl">
