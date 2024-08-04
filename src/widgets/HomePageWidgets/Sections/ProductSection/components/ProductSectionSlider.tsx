@@ -1,7 +1,7 @@
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from '../../../../../shared/components/Image';
-import ProductItem from '../../../../public/ProductSection-Item.png';
+import ProductItem from '../../../../../../public/ProductSection-Item.png';
 import ProductSectionSliderButtons from './ProductSectionSliderButtons';
 
 const ProductSectionSlider = () => {
