@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import ProductCard from '../../entities/ProductCard/components/ProductCard';
 import Icon from '../../shared/components/Icon';
 import styles from './ProductList.module.css';
@@ -45,7 +46,11 @@ const ProductList = () => {
         className={`${styles.productScrollBar} flex overflow-x-auto pb-6 product-list-scrollbar space-x-2 laptop:space-x-5 laptop:pb-10`}
       >
         {data.map((data) => {
-          return <ProductCard label={data.label} />
+          return (
+            <Link to={`/products/${data.id}`}>
+              <ProductCard label={data.label} />
+            </Link>
+          );
         })}
       </div>
       <button
