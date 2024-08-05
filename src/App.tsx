@@ -3,7 +3,6 @@ import { BurgerProvider } from './contexts/HeaderContext';
 import { Footer } from './widgets/Footer/Footer';
 import { Header } from './widgets/Header/Header';
 
-import './globals.css';
 
 export const App = () => {
   return (
