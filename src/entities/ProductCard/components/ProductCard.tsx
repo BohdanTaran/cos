@@ -5,7 +5,7 @@ import Image from '../../../shared/components/Image';
 import ProductLabel from './ProductLabel';
 
 interface Props {
-  label?: ProductLabelType;
+  label?: string;
 }
 
 const ProductCard = ({ label }: Props) => {
