@@ -4,7 +4,7 @@ import {
   MediaQueryContextType,
 } from '../../contexts/MediaQueryContext';
 
-export const useFooter = (): MediaQueryContextType => {
+export const useMediaQueryContext = (): MediaQueryContextType => {
   const context = useContext(MediaQueryContext);
   if (context === undefined) {
     throw new Error('');
