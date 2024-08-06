@@ -13,7 +13,7 @@ import ProductDetails from './components/ProductDetails';
 const data = {
   title: 'Funko Pop action figure Harry Potter with a wand',
   reviews: 3,
-  rating: 2.5,
+  rating: 3.5,
   isInStock: true,
   inStock: 5,
   label: 'SALE',
