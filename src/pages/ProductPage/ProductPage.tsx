@@ -15,6 +15,7 @@ const data = {
   reviews: 3,
   rating: 5,
   isInStock: true,
+  inStock: 5,
   label: 'SALE',
   price: 15,
   oldPrice: 25,
@@ -49,7 +50,7 @@ const ProductPage = () => {
           <div className="swiper-pagination static"></div>
         </div>
         <ProductDetails data={data} />
-        <ProductActions />
+        <ProductActions data={data} />
       </ContentLayout>
       <Carousel title="Recently Viewed" />
     </>
