@@ -1,15 +1,16 @@
-import { useFooter } from './useFooter';
+import { useMediaQueryContext } from './useMediaQueryContext';
 
 import ContentLayout from '../../shared/layouts/ContentLayout';
 import { MobileFooter } from './components/MobileFooter';
 import { LaptopFooter } from './components/LaptopFooter';
 
 export const Footer = () => {
-  const { isMobile } = useFooter();
+  const { isTablet } = useMediaQueryContext();
+
   return (
     <div className="bg-secondary-10">
       <ContentLayout>
-        {isMobile ? <MobileFooter /> : <LaptopFooter />}
+        {isTablet ? <MobileFooter /> : <LaptopFooter />}
       </ContentLayout>
     </div>
   );
