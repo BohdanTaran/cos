@@ -2,9 +2,9 @@ import ContentLayout from '../../shared/layouts/ContentLayout';
 import Carousel from '../../widgets/Carousel/Carousel';
 import ProductNavigation from './components/ProductNavigation';
 
+import { useMediaQuery } from 'react-responsive';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import useIsDevice from '../../contexts/MediaQueryContext';
 import ProductActions from './components/ProductActions';
 import ProductDetails from './components/ProductDetails';
 import ProductPageImages from './components/ProductPageImages';
@@ -31,7 +31,7 @@ const data = {
 };
 
 const ProductPage = () => {
-  const isLaptop = useIsDevice({
+  const isLaptop = useMediaQuery({
     query: `(min-width: 1024px)`,
   });
 
