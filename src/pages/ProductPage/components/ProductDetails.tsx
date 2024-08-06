@@ -8,14 +8,17 @@ const ProductDetails = ({ product }: IProductData) => {
       <h3 className="uppercase font-azeret font-bold text-xl">
         {product.title}
       </h3>
-      <div className="flex">
-        <StarsReview rating={product.rating} />
-        <span className="ml-4 mr-2">{product.rating}/5</span>
-        <span className="text-neutral-20">
-          ({product.reviews} {product.reviews > 1 ? 'reviews' : 'review'})
-        </span>
+      <div className="flex flex-col laptop:flex-row">
+        <div className="flex pb-2">
+          <StarsReview rating={product.rating} />
+          <span className="ml-4 mr-2">{product.rating}/5</span>
+          <span className="text-neutral-20 pr-6 border-r-2 border-neutral-10">
+            ({product.reviews} {product.reviews > 1 ? 'reviews' : 'review'})
+          </span>
+        </div>
+        <span className="font-medium text-success-40 laptop:pl-6">In stock</span>
       </div>
-      <span className="font-medium text-success-40">In stock</span>
+
       <ProductLabel label={product.label} direction="row" />
       <div className="flex w-9/12 items-center">
         <div className="w-[173px] mr-4">

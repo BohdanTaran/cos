@@ -44,7 +44,7 @@ const ProductActions = ({ product }: IProductData) => {
         </button>
       </div>
       <div className="w-full flex space-x-6 pt-6">
-        <button className="px-10 w-full bg-primary-10 rounded-md min-h-[40px] max-h-[56px] text-sm">
+        <button className="px-10 w-full bg-primary-10 rounded-md min-h-[40px] max-h-[56px] font-medium text-sm">
           Add to Cart
         </button>
         <Icon

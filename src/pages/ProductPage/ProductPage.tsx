@@ -4,8 +4,10 @@ import ProductNavigation from './components/ProductNavigation';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import useIsDevice from '../../contexts/MediaQueryContext';
 import ProductActions from './components/ProductActions';
 import ProductDetails from './components/ProductDetails';
+import ProductPageSliderDesktop from './components/ProductPageSliderDesktop';
 import ProductPageSliderMobile from './components/ProductPageSliderMobile';
 
 const data = {
@@ -20,17 +22,34 @@ const data = {
   discount: 40,
   description:
     'Introducing the classic plastic Harry Potter toy with his iconic wand! This detailed figure captures Harry in his Hogwarts uniform. Perfect for fans, this 6-inch collectible brings the Wizarding World magic to life.',
-  images: ['../../../public/FunkyPop.jpg', '../../../public/FunkyPop2.jpg'],
+  images: [
+    '../../../public/FunkyPop.webp',
+    '../../../public/FunkyPop2.webp',
+    '../../../public/FunkyPop.webp',
+    '../../../public/FunkyPop2.webp',
+  ],
 };
 
 const ProductPage = () => {
+  const isLaptop = useIsDevice({
+    query: `(min-width: 1024px)`,
+  });
+
   return (
     <>
       <ContentLayout>
         <ProductNavigation />
-        <ProductPageSliderMobile images={data.images} />
-        <ProductDetails product={data} />
-        <ProductActions product={data} />
+        <div className="w-full flex flex-col laptop:flex-row">
+          {isLaptop ? (
+            <ProductPageSliderDesktop images={data.images} />
+          ) : (
+            <ProductPageSliderMobile images={data.images} />
+          )}
+          <div className="flex flex-col w-full laptop:w-5/6">
+            <ProductDetails product={data} />
+            <ProductActions product={data} />
+          </div>
+        </div>
       </ContentLayout>
       <Carousel title="Recently Viewed" />
     </>

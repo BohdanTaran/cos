@@ -37,9 +37,11 @@ const ProductLabel = ({ label, direction }: Props) => {
             clipPath:
               'polygon(0 0, 100% 0, calc(100% - 5%) 50%, 100% 100%, 0 100%)',
           }}
-          className={`w-[38px] flex items-center text-[10px] text-white ${backgroundLabel()} bg-cover bg-left-bottom`}
+          className={`w-[38px] flex items-center text-[10px] text-white ${backgroundLabel()} bg-cover bg-left-bottom laptop:h-[24px] w-[48px]`}
         >
-          <span className="ml-1 laptop:ml-2">{label}</span>
+          <span className="ml-1 laptop:ml-2 text-[12px] font-medium">
+            {label}
+          </span>
         </div>
       )}
     </>
