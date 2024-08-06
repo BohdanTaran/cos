@@ -28,9 +28,17 @@ const StarsReview = ({ rating }: Props) => {
   }
 
   return (
-    <div className='flex'>
+    <div className="flex">
       {Array.from({ length: fullStars }, () => (
-        <Icon icon="star-full" styles='w-5 h-5' color='fill-yellow-300' />
+        <Icon icon="star-full" styles="w-5 h-5" color="fill-yellow-300" />
+      ))}
+
+      {Array.from({ length: halfStars }, () => (
+        <Icon icon="star-half" styles="w-5 h-5" color="fill-yellow-300" />
+      ))}
+
+      {Array.from({ length: emptyStars }, () => (
+        <Icon icon="star-empty" styles="w-5 h-5" color="fill-yellow-300" />
       ))}
     </div>
   );
