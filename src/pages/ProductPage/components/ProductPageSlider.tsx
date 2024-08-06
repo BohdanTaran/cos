@@ -27,7 +27,7 @@ const ProductPageSlider = ({ images }: Props) => {
         })}
       </Swiper>
       {/* Pagination of slider */}
-      <div className="swiper-pagination swiper-ggg static"></div>
+      <div className="swiper-pagination static"></div>
     </div>
   );
 };
