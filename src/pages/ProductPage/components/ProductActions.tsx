@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import Icon from '../../../shared/components/Icon';
+import { IProductData } from '../model/types';
 
-const ProductActions = ({ data }) => {
+const ProductActions = ({ product }: IProductData) => {
   const [quantity, setQuantity] = useState(1);
 
   const addQuantity = () => {
-    if (quantity < data.inStock) {
+    if (quantity < product.inStock) {
       setQuantity(quantity + 1);
     }
   };
@@ -36,7 +37,7 @@ const ProductActions = ({ data }) => {
           <Icon
             icon="plus"
             color={`${
-              quantity < data.inStock ? 'fill-neutral-90' : 'fill-neutral-20'
+              quantity < product.inStock ? 'fill-neutral-90' : 'fill-neutral-20'
             }`}
             size="w-6 h-6"
           />

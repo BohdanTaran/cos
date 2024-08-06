@@ -49,8 +49,8 @@ const ProductPage = () => {
           {/* Pagination of slider */}
           <div className="swiper-pagination static"></div>
         </div>
-        <ProductDetails data={data} />
-        <ProductActions data={data} />
+        <ProductDetails product={data} />
+        <ProductActions product={data} />
       </ContentLayout>
       <Carousel title="Recently Viewed" />
     </>
