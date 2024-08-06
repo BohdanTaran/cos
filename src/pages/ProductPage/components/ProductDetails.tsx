@@ -1,3 +1,4 @@
+import ProductLabel from '../../../entities/ProductCard/components/ProductLabel';
 import StarsReview from './StarsReview';
 
 const ProductDetails = ({ data }) => {
@@ -12,6 +13,7 @@ const ProductDetails = ({ data }) => {
         </span>
       </div>
       <span className="font-medium text-success-40">In stock</span>
+      <ProductLabel label={data.label} direction="row" />
       <div className="flex w-9/12 items-center">
         <div className="w-[173px] mr-4">
           <div className="font-bold text-xl">

@@ -1,5 +1,4 @@
 import ProductCardImage from '../../../../public/ProductCardImg.jpg';
-import { ProductLabelType } from '../../../constants/ProductLabelConstants';
 import Icon from '../../../shared/components/Icon';
 import Image from '../../../shared/components/Image';
 import ProductLabel from './ProductLabel';
@@ -21,7 +20,7 @@ const ProductCard = ({ label }: Props) => {
             outlineWidth={1.2}
           />
         </div>
-        <ProductLabel label={label} />
+        <ProductLabel label={label} direction="column" />
         <Image src={ProductCardImage} styles="w-full" />
       </div>
       <div className="p-2 laptop:px-4">
