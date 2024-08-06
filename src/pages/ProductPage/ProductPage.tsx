@@ -1,14 +1,12 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Image from '../../shared/components/Image';
 import ContentLayout from '../../shared/layouts/ContentLayout';
 import Carousel from '../../widgets/Carousel/Carousel';
 import ProductNavigation from './components/ProductNavigation';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 import ProductActions from './components/ProductActions';
 import ProductDetails from './components/ProductDetails';
+import ProductPageSliderMobile from './components/ProductPageSliderMobile';
 
 const data = {
   title: 'Funko Pop action figure Harry Potter with a wand',
@@ -30,25 +28,7 @@ const ProductPage = () => {
     <>
       <ContentLayout>
         <ProductNavigation />
-        <div className="relative min-h-[388px]">
-          <Swiper
-            modules={[Pagination]}
-            pagination={{
-              clickable: true,
-              el: '.swiper-pagination',
-            }}
-          >
-            {data.images.map((img) => {
-              return (
-                <SwiperSlide className="flex justify-center">
-                  <Image src={img} styles="" />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-          {/* Pagination of slider */}
-          <div className="swiper-pagination static"></div>
-        </div>
+        <ProductPageSliderMobile images={data.images} />
         <ProductDetails product={data} />
         <ProductActions product={data} />
       </ContentLayout>
