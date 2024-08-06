@@ -6,7 +6,7 @@ const CustomerCareList = () => {
         <li>Shipping Information</li>
         <li>Track Your Order</li>
         <li>Payment Options</li>
-        <li>Gift Card Lookups</li>
+        <li>Gift cards lookup</li>
         <li>Brand Packaging</li>
       </ul>
     </div>
