@@ -6,7 +6,7 @@ interface Props {
   images: string[];
 }
 
-const ProductPageSliderMobile = ({ images }: Props) => {
+const ProductPageSlider = ({ images }: Props) => {
   return (
     <div className="relative min-h-[388px]">
       <Swiper
@@ -19,7 +19,9 @@ const ProductPageSliderMobile = ({ images }: Props) => {
         {images.map((img: string) => {
           return (
             <SwiperSlide className="flex justify-center">
-              <Image src={img} styles="" />
+              <div className="w-full max-w-[400px]">
+                <Image src={img} styles="w-full h-auto" />
+              </div>
             </SwiperSlide>
           );
         })}
@@ -29,4 +31,4 @@ const ProductPageSliderMobile = ({ images }: Props) => {
     </div>
   );
 };
-export default ProductPageSliderMobile;
+export default ProductPageSlider;

@@ -7,8 +7,8 @@ import 'swiper/css/pagination';
 import useIsDevice from '../../contexts/MediaQueryContext';
 import ProductActions from './components/ProductActions';
 import ProductDetails from './components/ProductDetails';
-import ProductPageSliderDesktop from './components/ProductPageSliderDesktop';
-import ProductPageSliderMobile from './components/ProductPageSliderMobile';
+import ProductPageImages from './components/ProductPageImages';
+import ProductPageSlider from './components/ProductPageSlider';
 
 const data = {
   title: 'Funko Pop action figure Harry Potter with a wand',
@@ -41,9 +41,9 @@ const ProductPage = () => {
         <ProductNavigation />
         <div className="w-full flex flex-col laptop:flex-row">
           {isLaptop ? (
-            <ProductPageSliderDesktop images={data.images} />
+            <ProductPageImages images={data.images} />
           ) : (
-            <ProductPageSliderMobile images={data.images} />
+            <ProductPageSlider images={data.images} />
           )}
           <div className="flex flex-col w-full laptop:w-5/6">
             <ProductDetails product={data} />
