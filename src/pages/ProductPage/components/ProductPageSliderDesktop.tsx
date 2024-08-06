@@ -14,7 +14,7 @@ const ProductPageSliderDesktop = ({ images }: Props) => {
   const handleSlideChange = (swiper: any) => {
     const activeSlide = swiper.slides[swiper.activeIndex];
     const imgElement = activeSlide.querySelector('img') as HTMLImageElement;
-    if (imgElement) {
+    if (imgElement && imgElement.src !== activeImg) {
       setActiveImg(imgElement.src);
     }
   };
@@ -31,9 +31,10 @@ const ProductPageSliderDesktop = ({ images }: Props) => {
           />
         </button>
         <Swiper
+          className={'product-page'}
           modules={[Navigation]}
           direction="vertical"
-          style={{ maxHeight: '350px' }}
+          style={{ maxHeight: '100%' }}
           slidesPerView={1}
           speed={700}
           effect="coverflow"
@@ -45,11 +46,11 @@ const ProductPageSliderDesktop = ({ images }: Props) => {
         >
           {images.map((img: string) => {
             return (
-              <SwiperSlide
-                key={img}
-                className="swiper-slide-productPage"
-              >
-                <Image src={img} styles="flex items-center rounded-2xl" />
+              <SwiperSlide key={img}>
+                <Image
+                  src={img}
+                  styles="flex items-center rounded-2xl w-full h-full"
+                />
               </SwiperSlide>
             );
           })}

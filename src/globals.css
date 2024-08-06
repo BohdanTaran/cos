@@ -33,10 +33,11 @@ body {
   background: #9747ff;
 }
 
-.swiper-slide-active {
+.product-page .swiper-slide-active {
   @apply cursor-pointer flex flex-col max-h-[150px] border-2 border-primary-50 rounded-2xl my-3;
 }
 
-.swiper-slide-next {
+.product-page .swiper-slide-next {
   @apply cursor-pointer flex flex-col max-h-[150px] border-2 border-neutral-10 rounded-2xl my-3;
 }
+
