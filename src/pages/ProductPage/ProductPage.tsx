@@ -23,10 +23,10 @@ const data = {
   description:
     'Introducing the classic plastic Harry Potter toy with his iconic wand! This detailed figure captures Harry in his Hogwarts uniform. Perfect for fans, this 6-inch collectible brings the Wizarding World magic to life.',
   images: [
-    '../../../public/FunkyPop.webp',
-    '../../../public/FunkyPop2.webp',
-    '../../../public/FunkyPop.webp',
-    '../../../public/FunkyPop2.webp',
+    '/FunkyPop.webp',
+    '/FunkyPop2.webp',
+    '/FunkyPop.webp',
+    '/FunkyPop2.webp',
   ],
 };
 
