@@ -4,11 +4,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'header-topper': "url('/header-topper.jpg')",
-        'product-label-exclusive': "url('/bg-ProductLabel-exclusive.png')",
-        'product-label-new': "url('/bg-ProductLabel-new.png')",
-        'product-label-limited': "url('/bg-ProductLabel-limited.png')",
-        'product-label-sale': "url('/bg-ProductLabel-sale.png')",
+        'product-label-exclusive': "url('/bg-ProductLabel-exclusive.webp')",
+        'product-label-new': "url('/bg-ProductLabel-new.webp')",
+        'product-label-limited': "url('/bg-ProductLabel-limited.webp')",
+        'product-label-sale': "url('/bg-ProductLabel-sale.webp')",
         'sale-section': "url('/bg-sale-section.png')",
       },
       colors: {
@@ -50,11 +49,11 @@ export default {
           80: '#7C0000',
           70: '#BB0000',
           60: '#F90000',
-          50: '#3E0000',
+          50: '#FF3838',
           40: '#3E0000',
           30: '#3E0000',
           20: '#3E0000',
-          10: '#3E0000',
+          10: '#FFD7D7',
         },
         secondary: {
           90: '#192732',
