@@ -3,7 +3,7 @@ import Icon from '../../../shared/components/Icon';
 import { IProductData } from '../model/types';
 
 const ProductActions = ({ product }: IProductData) => {
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(0);
 
   const addQuantity = () => {
     if (quantity < product.inStock) {
