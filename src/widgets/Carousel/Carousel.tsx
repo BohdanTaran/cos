@@ -9,8 +9,8 @@ const Carousel = ({ title }: Props) => {
   return (
     <div className='relative'>
       <ContentLayout>
-        <div className="pb-5 laptop:pb-16">
-          <div className="flex justify-between py-5 laptop:py-16">
+        <div className="py-6 laptop:py-20">
+          <div className="flex justify-between pb-6 laptop:pb-14">
             <span className="font-azeret font-medium text-base laptop:text-3xl">
               {title}
             </span>
