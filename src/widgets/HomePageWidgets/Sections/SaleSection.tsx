@@ -2,7 +2,7 @@ import Carousel from '../../Carousel/Carousel';
 
 const SaleSection = () => {
   return (
-    <div className="py-10 space-y-10">
+    <div className="space-y-10">
       <div className="flex justify-center items-center w-full h-[605px] bg-sale-section bg-cover">
         <div className="w-full flex flex-col gap-4 text-center text-white">
           <div className="flex flex-col gap-4 font-azeret">

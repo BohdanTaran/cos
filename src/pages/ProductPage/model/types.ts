@@ -8,6 +8,7 @@ export interface IProduct {
   oldPrice: number;
   discount: number;
   description: string;
+  longDescription: string;
   images: string[];
 };
 
