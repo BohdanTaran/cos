@@ -12,7 +12,7 @@ const ProductPopUp = ({ product }: IProductData) => {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 w-full h-[60px]  px-5 py-2.5 bg-white shadow-product-card z-50 font-roboto flex items-center transition-transform duration-300 laptop:h-[80px] ${
+      className={`fixed text-neutral-90 bottom-0 left-0 w-full h-[60px]  px-5 py-2.5 bg-white shadow-product-card z-50 font-roboto flex items-center transition-transform duration-300 laptop:h-[80px] ${
         isShowPopUp ? 'translate-y-0' : 'translate-y-full'
       }`}
     >
