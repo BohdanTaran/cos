@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import WhyShopSection from '../../widgets/HomePageWidgets/Sections/WhyShopSection';
 import ProductInformation from '../../widgets/ProductPageWidgets/ProductInformation';
 import ProductMain from '../../widgets/ProductPageWidgets/ProductMain';
+import ProductPopUp from '../../widgets/ProductPageWidgets/ProductPopUp';
 
 const product = {
   title: 'Funko Pop action figure Harry Potter with a wand',
@@ -36,6 +37,7 @@ const ProductPage = () => {
         <ProductNavigation />
         <ProductMain product={product} />
         <ProductInformation product={product} />
+        <ProductPopUp product={product} />
       </ContentLayout>
       <Carousel title="Recently Viewed" />
       <WhyShopSection />
