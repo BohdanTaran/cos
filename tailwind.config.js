@@ -66,7 +66,10 @@ export default {
           20: '#dbe5ed',
           10: '#edf2f6',
         },
-        tertiary: '#9898A0',
+        text: {
+          tertiary: '#9898A0',
+          secondary: '#56565E',
+        },
       },
       boxShadow: {
         'product-card': '0 2px 6px 0 rgba(144, 144, 144, 0.15)',
