@@ -12,7 +12,7 @@ export const BurgerMenu = () => {
     setBurgerIsOpen((prev) => !prev);
   };
   return (
-    <div className="fixed font-medium z-50 bg-white w-full h-screen laptop:hidden">
+    <div className="fixed font-medium z-50 bg-white w-full h-screen  laptop:hidden">
       <div className="flex overflow-y-auto h-screen justify-center">
         <div className="w-full h-screen">
           <div className="flex p-5 justify-between items-center h-[72px] border-b-2 border-secondary-30 text-2xl">

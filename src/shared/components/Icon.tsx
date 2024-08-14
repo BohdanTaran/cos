@@ -6,6 +6,7 @@ interface Props {
   outlineColor?: string;
   outlineWidth?: number;
   styles?: string;
+  rotate?: number;
 }
 
 const Icon = ({
@@ -15,12 +16,13 @@ const Icon = ({
   size,
   outlineWidth = 0,
   styles,
+  rotate,
 }: Props) => {
+  const rotationStyle = rotate ? { transform: `rotate(${rotate}deg)` } : {};
   return (
     <svg
-      className={`${size} ${color} ${styles}`}
-      stroke={outlineColor}
-      style={{ strokeWidth: outlineWidth }}
+      className={`${size} ${color} ${outlineColor} ${styles}`}
+      style={{ strokeWidth: outlineWidth, ...rotationStyle }}
     >
       <use href={`${svgSprite}#${icon}`} />
     </svg>

@@ -15,3 +15,29 @@
 body {
   height: 100%;
 }
+
+.swiper-pagination {
+  bottom: 0;
+  left: 50%;
+  z-index: 20;
+}
+
+.swiper-pagination-bullet {
+  width: 32px;
+  border-radius: 9999px;
+  height: 4px;
+  background: #56565e;
+}
+
+.swiper-pagination-bullet-active {
+  background: #9747ff;
+}
+
+.product-page .swiper-slide-active {
+  @apply cursor-pointer flex flex-col max-h-[150px] border-2 border-primary-50 rounded-2xl my-3;
+}
+
+.product-page .swiper-slide-next {
+  @apply cursor-pointer flex flex-col max-h-[150px] border-2 border-neutral-10 rounded-2xl my-3;
+}
+

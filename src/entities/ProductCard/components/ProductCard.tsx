@@ -20,17 +20,17 @@ const ProductCard = ({ label }: Props) => {
             outlineWidth={1.2}
           />
         </div>
-        <ProductLabel label={label} />
+        <ProductLabel label={label} direction="column" />
         <Image src={ProductCardImage} styles="w-full" />
       </div>
       <div className="p-2 laptop:px-4">
-        <strong className="text-sm laptop:text-lg">
+        <strong className="text-sm text-neutral-90 laptop:text-lg">
           Nebula Pulsse Blaster
         </strong>
         <p className="text-xs text-neutral-50 mt-1 laptop:text-base">
           iridescent finish with LED lights and sound effects
         </p>
-        <div className="flex justify-between items-center mt-3">
+        <div className="text-neutral-90 flex justify-between items-center mt-3">
           <div>
             <strong>$1,150</strong>
             {/* <span className="line-through text-neutral-40 text-xs ml-1">
@@ -42,7 +42,7 @@ const ProductCard = ({ label }: Props) => {
               icon="shopping-cart"
               size={'w-[16px] h-[16px]'}
               color="fill-transparent"
-              outlineColor="black"
+              outlineColor="stroke-neutral-70"
               outlineWidth={3}
             />
           </button>
