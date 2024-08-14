@@ -5,7 +5,7 @@ import Icon from '../../shared/components/Icon';
 import styles from './ProductList.module.css';
 
 const data = [
-  { id: 1, label: 'EXCLUSIVE' },
+  { id: 1, label: 'EXCLUSIVE' }, // TODO (Bohdan): use constant (or enum) instead of string
   { id: 2, label: 'LIMITED' },
   { id: 3, label: 'SALE' },
   { id: 4 },

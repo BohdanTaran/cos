@@ -1,1 +1,1 @@
-export { default as ProductSection } from './ProductSection';
+export { default as ProductSection } from './ProductSection'; // TODO: deside weher to use default everywhere or not

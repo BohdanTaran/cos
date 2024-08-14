@@ -1,6 +1,19 @@
 import Icon from '../../../shared/components/Icon';
 
 const Subscribe = () => {
+  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   if(validateEmail(!e.target[0].value)){
+          // try{
+          //   // submit form
+          // } catch (error){
+          //   // show error message
+          // }
+  //   } else
+  //     // show error message
+  //      alert('Invalid email');
+  // }
+
   return (
     <div className="text-center pt-10 mb-12 laptop:mt-4">
       <p className="font-azeret text-base laptop:text-sm font-medium text-neutral-50 text-center uppercase">

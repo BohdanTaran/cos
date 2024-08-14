@@ -2,7 +2,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import ProductSectionSlider from './components/ProductSectionSlider';
-import ProductSectionText from './components/ProductSectionText';
+import {ProductSectionText} from './components/ProductSectionText';
 
 const ProductSection = () => {
   return (
@@ -22,4 +22,5 @@ const ProductSection = () => {
     </>
   );
 };
+
 export default ProductSection;

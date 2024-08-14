@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import WhyShopSection from '../../widgets/HomePageWidgets/Sections/WhyShopSection';
 import ProductInformation from '../../widgets/ProductPageWidgets/ProductInformation';
 import ProductMain from '../../widgets/ProductPageWidgets/ProductMain';
-import ProductPopUp from '../../widgets/ProductPageWidgets/ProductPopUp';
+import ProductPopUp from '../../widgets/ProductPageWidgets/ProductPopUp/ProductPopUp';
 
 const product = {
   title: 'Funko Pop action figure Harry Potter with a wand',

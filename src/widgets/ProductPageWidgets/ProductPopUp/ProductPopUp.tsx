@@ -1,8 +1,8 @@
 import { useMediaQuery } from 'react-responsive';
-import PopUpProductDesktop from '../../pages/ProductPage/components/PopUpProductDesktop';
-import PopUpProductMobile from '../../pages/ProductPage/components/PopUpProductMobile';
-import { usePopUp } from '../../pages/ProductPage/hooks/usePopUp';
-import { IProductData } from '../../pages/ProductPage/model/types';
+import PopUpProductDesktop from '../../../pages/ProductPage/components/PopUpProductDesktop';
+import PopUpProductMobile from '../../../pages/ProductPage/components/PopUpProductMobile';
+import { usePopUp } from '../../../pages/ProductPage/hooks/usePopUp';
+import { IProductData } from '../../../pages/ProductPage/model/types';
 
 const ProductPopUp = ({ product }: IProductData) => {
   const isLaptop = useMediaQuery({

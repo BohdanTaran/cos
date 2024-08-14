@@ -13,5 +13,5 @@ export const usePopUp = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  return isShowPopUp;
+  return isShowPopUp; // TODO: always return object in hook
 };
