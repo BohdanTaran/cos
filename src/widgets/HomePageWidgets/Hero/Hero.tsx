@@ -64,6 +64,7 @@ export const Hero = () => {
                 </div>
               </SwiperSlide>
             ))}
+
             {isMobile ? null : (
               <button className="button-next-slide z-10 absolute laptop:right-[18px] top-[350px] laptop:top-[254px]">
                 <Icon
