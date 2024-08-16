@@ -1,74 +1,82 @@
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import HeroSliderButtons from './HeroSliderButtons';
+import { HeroSlider } from './components/HeroSlider';
+import Icon from '../../../shared/components/Icon';
+import { useMediaQueryContext } from '../../Footer/useMediaQueryContext';
 
-const Hero = () => {
-  const hero = {
+const heroBanner = [
+  {
     bgImage: 'url(../../../../public/hero-desktop.webp)',
     topic: 'BARBIE',
     title: 'NEW DOLL ARE HERE',
     description:
       'Celebrate the power of friendship and working together! Barbi Dream Besties inspire kids to live out their best dreams.',
-  };
-  return (
-    <>
-      <div
-        className="bg-image bg-center bg-cover bg-no-repeat w-full h-[783px] laptop:h-[683px] mb-6 laptop:mb-20"
-        style={{ backgroundImage: `${hero.bgImage}` }}
-      >
-        <Swiper
-          modules={[Navigation, Pagination]}
-          slidesPerView={1}
-          loop={true}
-          pagination={{
-            clickable: true,
-            el: '.swiper-pagination',
-          }}
-          navigation={{
-            nextEl: '.button-next-slide',
-            prevEl: '.button-prev-slide',
-          }}
-          className=" w-full h-full"
-        >
-          <HeroSliderButtons />
-          <SwiperSlide>
-            <div className="pt-14 pl-5 laptop:pt-[175px] laptop:pl-[179px] flex flex-col">
-              <div className="font-roboto font-medium text-primary-50 text-base laptop:text-[22px] mb-4">
-                {hero.topic}
-              </div>
-              <div className="font-azeret font-bold text-2xl laptop:text-[32px] text-primary-90 mb-4 laptop:mb-6 w-full uppercase">
-                {hero.title}
-              </div>
-              <div className="font-roboto font-medium text-primary-90 text-xl laptop:text-2xl mb-4 laptop:mb-10 w-[335px] laptop:w-[526px]">
-                {hero.description}
-              </div>
+  },
+  {
+    bgImage: 'url(../../../../public/hero-desktop.webp)',
+    topic: 'BARBIE',
+    title: 'NEW DOLL ARE HERE',
+    description:
+      'Celebrate the power of friendship and working together! Barbi Dream Besties inspire kids to live out their best dreams.',
+  },
+];
 
-              <button
-                type="button"
-                className="bg-primary-20 text-neutral-90 w-[130px] h-[40px] rounded-md text-sm laptop:w-[240px] laptop:h-[45px] laptop:font-medium laptop:text-xl"
-              >
-                Shop Collection
+export const Hero = () => {
+  const { isMobile } = useMediaQueryContext();
+
+  return (
+    <div>
+      <div className="relative">
+        <div className="aspect-square w-full h-[783px] laptop:h-[683px]  mb-6 laptop:mb-20">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            slidesPerView={1}
+            loop={true}
+            pagination={{
+              clickable: true,
+              el: '.swiper-pagination',
+            }}
+            navigation={{
+              nextEl: '.button-next-slide',
+              prevEl: '.button-prev-slide',
+            }}
+            className="w-full h-full"
+          >
+            {isMobile ? null : (
+              <button className="button-prev-slide z-10 absolute laptop:left-[18px] laptop:top-[254px]">
+                <Icon
+                  icon="arrow-left"
+                  color="fill-neutral-30"
+                  styles="laptop:w-[74px] laptop:h-[74px]"
+                />
               </button>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+            )}
+            {heroBanner.map((hero, index) => (
+              <SwiperSlide
+                key={index}
+                className="flex justify-center items-center"
+              >
+                <div
+                  className="bg-image bg-center bg-cover bg-no-repeat w-full h-[783px] laptop:h-[683px] mb-6 laptop:mb-20"
+                  style={{ backgroundImage: `${hero.bgImage}` }}
+                >
+                  <HeroSlider hero={hero} />
+                </div>
+              </SwiperSlide>
+            ))}
+            {isMobile ? null : (
+              <button className="button-next-slide z-10 absolute laptop:right-[18px] top-[350px] laptop:top-[254px]">
+                <Icon
+                  icon="arrow-right"
+                  color="fill-neutral-30"
+                  styles="laptop:w-[74px] laptop:h-[74px]"
+                />
+              </button>
+            )}
+            <div className="swiper-pagination static bottom-0"></div>
+          </Swiper>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
-
-export default Hero;
-
-{
-  /* <div className="flex justify-start object-cover">
-      {isMobile ? (
-        <Image src={heroMobileImg} styles="h-[783px] w-[375px]" />
-      ) : (
-        <Image
-          src={heroDesktopImg}
-          styles="h-[683px] {isTablet ? object-none : object-cover}"
-        />
-      )}
-      <div className="">BARBIE</div>
-    </div> */
-}
