@@ -9,7 +9,7 @@ export interface MediaQueryContextType {
 const SIZES = {
   phone: `(max-width: 640px)`,
   tablet: `(max-width: 1024px)`,
-  laptop: `(min-width: 1280px)`,
+  laptop: `(max-width: 1280px)`,
 };
 
 export interface MediaQueryProviderProps {
