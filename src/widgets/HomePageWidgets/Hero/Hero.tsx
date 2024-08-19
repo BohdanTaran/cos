@@ -10,7 +10,6 @@ import heroImg from '../../../../public/hero-desktop.webp';
 
 const heroBanner = [
   {
-    // bgImage: 'url(../../../../public/hero-desktop.webp)',
     bgImage: `url(${heroImg})`,
     topic: 'BARBIE',
     title: 'NEW DOLL ARE HERE',
@@ -48,9 +47,9 @@ export const Hero = () => {
             pagination={{
               el: '.swiper-pagination',
               clickable: true,
-              type: 'bullets',
-              bulletClass: 'neutral-50',
-              bulletActiveClass: 'primary-50',
+              type: 'fraction',
+              totalClass: '#56565E',
+              currentClass: '#9747FF',
             }}
             navigation={{
               nextEl: '.button-next-slide',
@@ -90,9 +89,8 @@ export const Hero = () => {
               </button>
             )}
           </Swiper>
-          {/* <div className="bottom-0 left-0 w-[23.5px] h-1"> */}
+
           <div className="swiper-pagination"></div>
-          {/* </div> */}
         </div>
       </div>
     </div>
