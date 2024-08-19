@@ -3,6 +3,9 @@ export interface IHero {
   topic: string;
   title: string;
   description: string;
+  mainColor: string;
+  accentColor: string;
+  buttonColor: string;
 }
 
 export interface IHeroData {
