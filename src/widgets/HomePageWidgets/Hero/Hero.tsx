@@ -6,10 +6,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { HeroSlider } from './components/HeroSlider';
 import Icon from '../../../shared/components/Icon';
 import { useMediaQueryContext } from '../../Footer/useMediaQueryContext';
+import heroImg from '../../../../public/hero-desktop.webp';
 
 const heroBanner = [
   {
-    bgImage: 'url(../../../../public/hero-desktop.webp)',
+    // bgImage: 'url(../../../../public/hero-desktop.webp)',
+    bgImage: `url(${heroImg})`,
     topic: 'BARBIE',
     title: 'NEW DOLL ARE HERE',
     description:
@@ -19,7 +21,7 @@ const heroBanner = [
     buttonColor: '#D5B5FF',
   },
   {
-    bgImage: 'url(../../../../public/hero-desktop.webp)',
+    bgImage: `url(${heroImg})`,
     topic: 'BARBIE',
     title: 'NEW DOLL ARE HERE',
     description:
@@ -46,6 +48,7 @@ export const Hero = () => {
             pagination={{
               el: '.swiper-pagination',
               clickable: true,
+              type: 'bullets',
               bulletClass: 'neutral-50',
               bulletActiveClass: 'primary-50',
             }}
@@ -87,9 +90,9 @@ export const Hero = () => {
               </button>
             )}
           </Swiper>
-          <div className="absolute z-20 bottom-[27px] left-0 w-full w-[23.5px] h-1">
-            <div className="swiper-pagination"></div>
-          </div>
+          {/* <div className="bottom-0 left-0 w-[23.5px] h-1"> */}
+          <div className="swiper-pagination"></div>
+          {/* </div> */}
         </div>
       </div>
     </div>
