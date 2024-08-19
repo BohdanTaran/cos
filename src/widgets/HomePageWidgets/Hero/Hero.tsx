@@ -40,12 +40,11 @@ export const Hero = () => {
           <Swiper
             modules={[Navigation, Pagination]}
             className="w-full h-full"
-            spaceBetween={11}
+            spaceBetween={1}
             slidesPerView={1}
             loop={true}
             pagination={{
               el: '.swiper-pagination',
-              type: 'bullets',
               clickable: true,
               bulletClass: 'neutral-50',
               bulletActiveClass: 'primary-50',
@@ -54,7 +53,6 @@ export const Hero = () => {
               nextEl: '.button-next-slide',
               prevEl: '.button-prev-slide',
             }}
-            // className="w-full h-full"
           >
             {isMobile ? null : (
               <button className="button-prev-slide z-10 absolute laptop:left-[18px] laptop:top-[254px]">
@@ -89,7 +87,7 @@ export const Hero = () => {
               </button>
             )}
           </Swiper>
-          <div className="absolute bottom-0 left-0 w-full">
+          <div className="absolute z-20 bottom-[27px] left-0 w-full w-[23.5px] h-1">
             <div className="swiper-pagination"></div>
           </div>
         </div>
