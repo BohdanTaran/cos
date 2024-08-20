@@ -12,7 +12,7 @@ export const HeroSlider = ({ hero }: IHeroData) => {
           {hero.topic}
         </div>
         <div
-          className={`font-azeret font-bold text-2xl laptop:text-[32px] text-[#1C0041] mb-4 laptop:mb-6 w-full uppercase`}
+          className={`font-azeret font-bold text-[${mainColor} text-2xl laptop:text-[32px] text-[#1C0041] mb-4 laptop:mb-6 w-full uppercase`}
         >
           {hero.title}
         </div>
@@ -24,7 +24,7 @@ export const HeroSlider = ({ hero }: IHeroData) => {
 
         <button
           type="button"
-          className={`bg-[#D5B5FF] text-[${buttonColor}] w-[130px] h-[40px] rounded-md text-sm laptop:w-[240px] laptop:h-[45px] laptop:font-medium laptop:text-xl`}
+          className={`bg-[${buttonColor}] text-[${mainColor}] w-[130px] h-[40px] rounded-md text-sm laptop:w-[240px] laptop:h-[45px] laptop:font-medium laptop:text-xl`}
         >
           Shop Collection
         </button>
