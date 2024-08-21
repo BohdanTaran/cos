@@ -1,5 +1,5 @@
 import Carousel from '../../widgets/Carousel/Carousel';
-import { Hero } from '../../widgets/HomePageWidgets/Hero/Hero';
+import { Hero } from '../../widgets/HomePageWidgets/Hero';
 import BrandSection from '../../widgets/HomePageWidgets/Sections/BrandSection';
 import { ProductSection } from '../../widgets/HomePageWidgets/Sections/ProductSection';
 import SaleSection from '../../widgets/HomePageWidgets/Sections/SaleSection';

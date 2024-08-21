@@ -8,7 +8,7 @@ import Icon from '../../../shared/components/Icon';
 import { useMediaQueryContext } from '../../Footer/useMediaQueryContext';
 import heroImg from '../../../../public/hero-desktop.webp';
 
-const heroBanner = [
+const herosBanner = [
   {
     bgImage: `url(${heroImg})`,
     topic: 'BARBIE',
@@ -74,7 +74,7 @@ export const Hero = () => {
                 />
               </button>
             )}
-            {heroBanner.map((hero, index) => (
+            {herosBanner.map((hero, index) => (
               <SwiperSlide
                 key={index}
                 className="flex justify-center items-center"
@@ -100,6 +100,7 @@ export const Hero = () => {
           </Swiper>
         </div>
       </div>
+      <div className="swiper-pagination static bottom-0"></div>
     </div>
   );
 };
