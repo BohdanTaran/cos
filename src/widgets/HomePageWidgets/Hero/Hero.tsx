@@ -58,9 +58,6 @@ export const Hero = () => {
             loop={true}
             pagination={{
               clickable: true,
-              renderBullet: function (index: number, className: string) {
-                return '<span class=".hero ' + className + '">' + '</span>';
-              },
             }}
             navigation={{
               nextEl: '.button-next-slide',
