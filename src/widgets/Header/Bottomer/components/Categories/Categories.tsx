@@ -2,11 +2,11 @@ import Icon from '../../../../../shared/components/Icon';
 
 export const Categories = () => {
   return (
-    <div className="flex flex-col space-y-3 text-neutral-70">
-      <nav className="p-5 font-azeret">
-        <ul className="flex flex-col space-y-10">
+    <div className="flex flex-col space-y-3 pt-[42px] pb-[58px] text-neutral-70 text-[17px] uppercase">
+      <nav className="px-5 font-azeret">
+        <ul className="flex flex-col space-y-11">
           <a href="#" className="flex justify-between items-center">
-            COLLECTIONS
+            Prouct type
             <Icon
               icon="arrow-right"
               color="fill-neutral-50"
@@ -14,7 +14,7 @@ export const Categories = () => {
             />
           </a>
           <a href="#" className="flex justify-between items-center">
-            ROBOTS
+            GENRES
             <Icon
               icon="arrow-right"
               color="fill-neutral-50"
@@ -22,7 +22,7 @@ export const Categories = () => {
             />
           </a>
           <a href="#" className="flex justify-between items-center">
-            VEHICLES
+            BRANDS
             <Icon
               icon="arrow-right"
               color="fill-neutral-50"
@@ -30,23 +30,7 @@ export const Categories = () => {
             />
           </a>
           <a href="#" className="flex justify-between items-center">
-            WEAPON
-            <Icon
-              icon="arrow-right"
-              color="fill-neutral-50"
-              styles="w-[20px] h-[14px]"
-            />
-          </a>
-          <a href="#" className="flex justify-between items-center">
-            COLLECTIONS
-            <Icon
-              icon="arrow-right"
-              color="fill-neutral-50"
-              styles="w-[20px] h-[14px]"
-            />
-          </a>
-          <a href="#" className="flex justify-between items-center">
-            PETS
+            GIFT IDEAS
             <Icon
               icon="arrow-right"
               color="fill-neutral-50"

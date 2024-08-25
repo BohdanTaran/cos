@@ -1,4 +1,4 @@
-import Icon from '../../shared/components/Icon'
+import Icon from '../../shared/components/Icon';
 import { ActionBar } from '../Header/Bottomer/components/ActionBar';
 import { Categories } from '../Header/Bottomer/components/Categories/Categories';
 import { SwitchCurrency } from '../Header/Topper/components/SwitchCurrency/SwitchCurrency';
@@ -16,7 +16,7 @@ export const BurgerMenu = () => {
       <div className="flex overflow-y-auto h-screen justify-center">
         <div className="w-full h-screen">
           <div className="flex p-5 justify-between items-center h-[72px] border-b-2 border-secondary-30 text-2xl">
-            <h1 className='text-neutral-70'>Menu</h1>
+            <h1 className="text-neutral-70">Menu</h1>
             <button onClick={closeBurgerMenu}>
               <Icon
                 icon="burgerMenu-close"
@@ -25,15 +25,53 @@ export const BurgerMenu = () => {
               />
             </button>
           </div>
-          <div className="space-y-4 h-screen">
+          <div className="laptop:space-y-4 h-screen">
             <Categories />
             <ActionBar>
-              <nav className="bg-secondary-10 text-neutral-50">
-                <ul className="p-5 flex flex-col space-y-5 font-roboto">
-                  <li>About us</li>
-                  <li>Support center</li>
+              <nav className="bg-secondary-10 text-neutral-50 px-5 py-6">
+                <ul className="mb-6  flex flex-col space-y-6 font-roboto text-lg">
+                  <li className="flex flex-row gap-2">
+                    <Icon
+                      icon="user"
+                      size={'w-[26px] h-[26px] laptop:w-[36px] laptop:h-[36px]'}
+                      color="fill-transparent"
+                      outlineColor="stroke-neutral-70"
+                      outlineWidth={1.3}
+                    />
+                    My account
+                  </li>
+                  <li className="flex flex-row gap-2">
+                    <Icon
+                      icon="heart"
+                      size={'w-[24px] h-[24px] laptop:w-[36px] laptop:h-[36px]'}
+                      color="fill-transparent"
+                      outlineColor="stroke-neutral-70"
+                      outlineWidth={1.3}
+                    />
+                    Wish list
+                  </li>
+                  <li className="flex flex-row gap-2">
+                    <Icon
+                      icon="info-thin"
+                      size={'w-[24px] h-[24px] laptop:w-[36px] laptop:h-[36px]'}
+                      color="fill-transparent"
+                      outlineColor="stroke-neutral-70"
+                    />
+                    About us
+                  </li>
+                  <li className="flex flex-row gap-2">
+                    <Icon
+                      icon="headset-help"
+                      size={'w-[24px] h-[24px] laptop:w-[36px] laptop:h-[36px]'}
+                      color="fill-transparent"
+                      outlineColor="stroke-neutral-70"
+                    />
+                    Support center
+                  </li>
                   <li>
-                    <SwitchLanguage isBurger={true} />
+                    <div className="border-t-4 border-secondary-20 pt-6">
+                      <SwitchLanguage isBurger={true} />
+                    </div>
                   </li>
                   <li>
                     <SwitchCurrency isBurger={true} />
