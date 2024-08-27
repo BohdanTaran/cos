@@ -1,0 +1,30 @@
+//@import '@utils';
+//
+//// Example
+//.containerRRRR {
+//  width: 100%;
+//  margin: 0 auto;
+//  padding: 0 24px;
+//
+//  @include mobile-m {
+//    max-width: $mobile-m-width;
+//  }
+//
+//  @include mobile-l {
+//    max-width: $table-width;
+//  }
+//
+//  @include table {
+//    max-width: $table-width;
+//    padding: 0 32px;
+//  }
+//
+//  @include laptop {
+//    max-width: 100%;
+//    padding: 0 40px;
+//  }
+//
+//  @include desktop {
+//    max-width: $desktop-width;
+//  }
+//}
