@@ -1,4 +1,4 @@
-import Icon from '../../shared/components/Icon'
+import Icon from '../../shared/components/Icon';
 import { ActionBar } from '../Header/Bottomer/components/ActionBar';
 import { Categories } from '../Header/Bottomer/components/Categories/Categories';
 import { SwitchCurrency } from '../Header/Topper/components/SwitchCurrency/SwitchCurrency';
@@ -16,7 +16,7 @@ export const BurgerMenu = () => {
       <div className="flex overflow-y-auto h-screen justify-center">
         <div className="w-full h-screen">
           <div className="flex p-5 justify-between items-center h-[72px] border-b-2 border-secondary-30 text-2xl">
-            <h1 className='text-neutral-70'>Menu</h1>
+            <h1 className="text-neutral-70">Menu</h1>
             <button onClick={closeBurgerMenu}>
               <Icon
                 icon="burgerMenu-close"

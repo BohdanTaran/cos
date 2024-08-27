@@ -4,7 +4,7 @@ interface Props {
   styles?: string;
 }
 
-const Image = ({src, size, styles}: Props) => {
-	return <img className={styles} width={size} src={src} alt="img" />;
-}
-export default Image
+const Image = ({ src, size, styles }: Props) => {
+  return <img className={styles} width={size} src={src} alt="img" />;
+};
+export default Image;
