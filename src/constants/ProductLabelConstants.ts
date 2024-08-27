@@ -1,5 +1,1 @@
-export type ProductLabelType = 
-| "NEW"
-| "LIMITED"
-| "EXCLUSIVE"
-| "SALE"
+export type ProductLabelType = 'NEW' | 'LIMITED' | 'EXCLUSIVE' | 'SALE';
