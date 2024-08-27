@@ -10,8 +10,8 @@ export interface IProduct {
   description: string;
   longDescription: string;
   images: string[];
-};
+}
 
 export interface IProductData {
-	product: IProduct;
+  product: IProduct;
 }
