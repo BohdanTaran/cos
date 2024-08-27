@@ -1,4 +1,4 @@
-import Icon from '../../../../../shared/components/Icon'
+import Icon from '../../../../../shared/components/Icon';
 
 const ProductSectionSliderButtons = () => {
   return (

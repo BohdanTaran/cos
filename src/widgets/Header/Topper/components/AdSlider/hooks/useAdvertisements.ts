@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getAdvertisements, IAdvertisement } from '../../../../../../api'
+import { getAdvertisements, IAdvertisement } from '../../../../../../api';
 
 export const useAdvertisements = () => {
   const [advertisements, setAdvertisements] = useState<IAdvertisement[]>([]);

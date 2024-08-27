@@ -7,7 +7,7 @@ interface Props {
 
 const Carousel = ({ title }: Props) => {
   return (
-    <div className='relative'>
+    <div className="relative">
       <ContentLayout>
         <div className="py-6 laptop:py-20">
           <div className="flex justify-between pb-6 laptop:pb-14">

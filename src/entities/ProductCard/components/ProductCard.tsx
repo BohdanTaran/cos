@@ -1,4 +1,3 @@
-import ProductCardImage from '../../../../public/ProductCardImg.jpg';
 import Icon from '../../../shared/components/Icon';
 import Image from '../../../shared/components/Image';
 import ProductLabel from './ProductLabel';
@@ -21,7 +20,7 @@ const ProductCard = ({ label }: Props) => {
           />
         </div>
         <ProductLabel label={label} direction="column" />
-        <Image src={ProductCardImage} styles="w-full" />
+        <Image src="/ProductCardImg.jpg" styles="w-full" />
       </div>
       <div className="p-2 laptop:px-4">
         <strong className="text-sm text-neutral-90 laptop:text-lg">

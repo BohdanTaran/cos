@@ -12,7 +12,7 @@
   border-radius: 10px;
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .productScrollBar::-webkit-scrollbar-track {
     margin: 0 200px;
   }

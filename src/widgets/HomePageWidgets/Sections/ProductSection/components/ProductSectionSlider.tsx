@@ -1,6 +1,5 @@
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import ProductItem from '../../../../../../public/ProductSection-Item.png';
 import Image from '../../../../../shared/components/Image';
 import ProductSectionSliderButtons from './ProductSectionSliderButtons';
 
@@ -26,13 +25,13 @@ const ProductSectionSlider = () => {
             <ProductSectionSliderButtons />
             <SwiperSlide className="flex justify-center items-center">
               <Image
-                src={ProductItem}
+                src="/ProductSection-Item.png"
                 styles="w-11/12 h-5/6 max-w-[356px] max-h-[320px] laptop:max-w-[400px] max-h-[420px] desktop:max-w-[500px] max-h-[520px]"
               />
             </SwiperSlide>
             <SwiperSlide className="flex justify-center items-center">
               <Image
-                src={ProductItem}
+                src="/ProductSection-Item.png"
                 styles="w-11/12 h-5/6 max-w-[356px] max-h-[320px] laptop:max-w-[400px] max-h-[420px] desktop:max-w-[500px] max-h-[520px]"
               />
             </SwiperSlide>

@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import ProductCard from '../../entities/ProductCard/components/ProductCard';
 import Icon from '../../shared/components/Icon';
-import styles from './ProductList.module.css';
+import styles from './ProductList.module.scss';
 
 const data = [
   { id: 1, label: 'EXCLUSIVE' },
