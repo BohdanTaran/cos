@@ -5,7 +5,7 @@ import { App } from './App';
 import HomePage from './pages/HomePage/HomePage';
 import ProductPage from './pages/ProductPage/ProductPage';
 
-import './globals.css'
+import './globals.scss';
 
 const router = createBrowserRouter([
   {

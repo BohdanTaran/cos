@@ -6,11 +6,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { HeroSlider } from './components/HeroSlider';
 import Icon from '../../../shared/components/Icon';
 import { useMediaQueryContext } from '../../Footer/useMediaQueryContext';
-import heroImg from '../../../../public/hero-desktop.webp';
 
+const heroUrl = '/hero-desktop.webp';
 const herosBanner = [
   {
-    bgImage: `url(${heroImg})`,
+    bgImage: `url(${heroUrl})`,
     topic: 'BARBIE',
     title: 'NEW DOLL ARE HERE',
     description:
@@ -20,7 +20,7 @@ const herosBanner = [
     buttonColor: '#D5B5FF',
   },
   {
-    bgImage: `url(${heroImg})`,
+    bgImage: `url(${heroUrl})`,
     topic: 'BARBIE',
     title: 'NEW DOLL ARE HERE',
     description:
@@ -30,7 +30,7 @@ const herosBanner = [
     buttonColor: '#D5B5FF',
   },
   {
-    bgImage: `url(${heroImg})`,
+    bgImage: `url(${heroUrl})`,
     topic: 'BARBIE',
     title: 'NEW DOLL ARE HERE',
     description:

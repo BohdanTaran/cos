@@ -1,7 +1,8 @@
 import { IHeroData } from '../model/types';
 
 export const HeroSlider = ({ hero }: IHeroData) => {
-  const { mainColor, accentColor, buttonColor } = hero;
+  const { topic, title, description, mainColor, accentColor, buttonColor } =
+    hero;
   console.log(mainColor, accentColor, buttonColor);
 
   return (
@@ -10,17 +11,17 @@ export const HeroSlider = ({ hero }: IHeroData) => {
         <div
           className={`font-roboto font-medium text-[#9747FF] text-base laptop:text-[22px] mb-4`}
         >
-          {hero.topic}
+          {topic}
         </div>
         <div
           className={`font-azeret font-bold text-[#1C0041} text-2xl laptop:text-[32px] text-[#1C0041] mb-4 laptop:mb-6 w-full uppercase`}
         >
-          {hero.title}
+          {title}
         </div>
         <div
           className={`font-roboto font-medium text-[#1C0041}] text-xl laptop:text-2xl mb-4 laptop:mb-10 w-[335px] laptop:w-[526px]`}
         >
-          {hero.description}
+          {description}
         </div>
 
         <button
