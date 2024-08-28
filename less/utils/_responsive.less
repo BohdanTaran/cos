@@ -7,25 +7,25 @@
 
 .mobile(@styles) {
   @media (min-width: @mobile-width){
-    @styles;
+    @styles();
   }
 }
 
 .tablet(@styles) {
   @media (min-width: @tablet-width) {
-    @styles;
+    @styles();
   }
 }
 
 .laptop(@styles) {
   @media (max-width: @laptop-width){
-    @styles;
+    @styles();
   }
 }
 
 .desktop(@styles) {
   @media (min-width: @desktop-width) {
-    @styles;
+    @styles();
   }
 }
 
