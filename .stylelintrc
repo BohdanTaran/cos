@@ -19,6 +19,6 @@
   },
   "ignoreFiles": [
     "./src/globals.scss",
-    "./scss/libs/**/*"
+    "./less/libs/**/*"
   ]
 }

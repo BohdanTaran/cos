@@ -21,7 +21,6 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "@/*": ["./*"],
-      "@utils": ["./scss/utils/_index"]
     }
   },
   "include": ["src"],
