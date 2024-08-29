@@ -5,7 +5,11 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { HeroSlider } from './components/HeroSlider';
 import Icon from '../../../shared/components/Icon';
-import { useMediaQueryContext } from '../../Footer/useMediaQueryContext';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import type { AppDispatch } from '../../../redux/store';
+import { selectIsTablet } from '../../../redux/mediaQuery/mediaQuerySelectors';
+import { checkMediaQueries } from '../../../redux/mediaQuery/mediaQueryOperations';
 
 const heroUrl = '/hero-desktop.webp';
 const herosBanner = [
@@ -42,7 +46,13 @@ const herosBanner = [
 ];
 
 export const Hero = () => {
-  const { isTablet } = useMediaQueryContext();
+  const dispatch: AppDispatch = useDispatch();
+
+  const isTablet = useSelector(selectIsTablet);
+
+  useEffect(() => {
+    dispatch(checkMediaQueries());
+  }, [dispatch]);
 
   return (
     <div>
