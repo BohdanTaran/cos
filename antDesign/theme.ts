@@ -1,6 +1,9 @@
 export const theme = {
   token: {
     fontFamily: `'Roboto', sans-serif`,
+    colorPrimaryHover: '#EADAFF',
+    primaryHoverColor: '#111113',
+    colorPrimaryTextHover: 'red',
   },
   components: {
     Button: {
@@ -8,6 +11,7 @@ export const theme = {
       colorPrimary: '#EADAFF',
 
       colorPrimaryHover: '#EADAFF',
+      primaryHoverColor: '#111113',
 
       controlHeight: 40,
       controlHeightLG: 48,
