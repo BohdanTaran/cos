@@ -1,0 +1,183 @@
+@import "../utils/_index";
+
+.text-styles(@font, @size, @weight, @line-height, @text-transform: normal) {
+  font-family: @font;
+  font-size: @size;
+  font-weight: @weight;
+  line-height: @line-height;
+  text-transform: @text-transform;
+}
+
+// Headlines
+h1 {
+  .text-styles(@azeret-font-family, 60px, 700, normal, uppercase)
+}
+
+h2 {
+  .text-styles(@azeret-font-family, 36px, 700, normal, uppercase)
+}
+
+h3 {
+  .text-styles(@azeret-font-family, 32px, 500, normal);
+
+  &.bold {
+    .text-styles(@azeret-font-family, 30px, 700, 36px, uppercase);
+  }
+}
+
+h4 {
+  .text-styles(@azeret-font-family, 24px, 500, 22px);
+
+  &.bold {
+    .text-styles(@azeret-font-family, 24px, 700, 32px, uppercase);
+  }
+}
+
+h5 {
+  .text-styles(@azeret-font-family, 17px, 500, 22px);
+
+  &.bold {
+    .text-styles(@azeret-font-family, 20px, 700, 28px, uppercase);
+  }
+}
+
+// Text
+.font-2xl {
+
+  &-light {
+    .text-styles(@roboto-font-family, 24px, 300, 32px);
+  }
+
+  &-regular {
+    .text-styles(@roboto-font-family, 24px, 400, 32px);
+  }
+
+  &-medium {
+    .text-styles(@roboto-font-family, 24px, 500, 32px);
+  }
+
+  &-bold {
+    .text-styles(@roboto-font-family, 24px, 700, 32px);
+  }
+
+}
+
+.font-xl {
+
+  &-light {
+    .text-styles(@roboto-font-family, 22px, 300, 30px);
+  }
+
+  &-regular {
+    .text-styles(@roboto-font-family, 22px, 400, 30px);
+  }
+
+  &-medium {
+    .text-styles(@roboto-font-family, 22px, 500, 30px);
+  }
+
+  &-bold {
+    .text-styles(@roboto-font-family, 22px, 700, 30px);
+  }
+
+}
+
+.font-l {
+
+  &-light {
+    .text-styles(@roboto-font-family, 20px, 300, 28px);
+  }
+
+  &-regular {
+    .text-styles(@roboto-font-family, 20px, 400, 28px);
+  }
+
+  &-medium {
+    .text-styles(@roboto-font-family, 20px, 500, 28px);
+  }
+
+  &-bold {
+    .text-styles(@roboto-font-family, 20px, 700, 28px);
+  }
+
+}
+
+.font-m {
+
+  &-light {
+    .text-styles(@roboto-font-family, 18px, 300, 28px);
+  }
+
+  &-regular {
+    .text-styles(@roboto-font-family, 18px, 400, 28px);
+  }
+
+  &-medium {
+    .text-styles(@roboto-font-family, 18px, 500, 28px);
+  }
+
+  &-bold {
+    .text-styles(@roboto-font-family, 18px, 700, 28px);
+  }
+
+}
+
+.font-base {
+
+  &-light {
+    .text-styles(@roboto-font-family, 16px, 300, 24px);
+  }
+
+  &-regular {
+    .text-styles(@roboto-font-family, 16px, 400, 24px);
+  }
+
+  &-medium {
+    .text-styles(@roboto-font-family, 16px, 500, 24px);
+  }
+
+  &-bold {
+    .text-styles(@roboto-font-family, 16px, 700, 24px);
+  }
+
+}
+
+.font-xs {
+
+  &-light {
+    .text-styles(@roboto-font-family, 14px, 300, 20px);
+  }
+
+  &-regular {
+    .text-styles(@roboto-font-family, 14px, 400, 20px);
+  }
+
+  &-medium {
+    .text-styles(@roboto-font-family, 14px, 500, 20px);
+  }
+
+  &-bold {
+    .text-styles(@roboto-font-family, 14px, 700, 20px);
+  }
+
+}
+
+.font-xxs {
+
+  &-light {
+    .text-styles(@roboto-font-family, 12px, 300, 16px);
+  }
+
+  &-regular {
+    .text-styles(@roboto-font-family, 12px, 400, 16px);
+  }
+
+  &-medium {
+    .text-styles(@roboto-font-family, 12px, 500, 16px);
+  }
+
+  &-bold {
+    .text-styles(@roboto-font-family, 12px, 700, 16px);
+  }
+
+}

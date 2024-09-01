@@ -1,0 +1,31 @@
+// Screen sizes
+@mobile-width: 320px;
+@tablet-width: 720px;
+@laptop-width: 1024px;
+@desktop-width: 1440px;
+
+
+.mobile(@styles) {
+  @media (min-width: @mobile-width){
+    @styles();
+  }
+}
+
+.tablet(@styles) {
+  @media (min-width: @tablet-width) {
+    @styles();
+  }
+}
+
+.laptop(@styles) {
+  @media (max-width: @laptop-width){
+    @styles();
+  }
+}
+
+.desktop(@styles) {
+  @media (min-width: @desktop-width) {
+    @styles();
+  }
+}
+
