@@ -20,7 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@/*": ["./*"],
+      //  "@/*": ["./*"],
       "@utils": ["./scss/utils/_index"]
     }
   },

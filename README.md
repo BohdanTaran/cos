@@ -9,3 +9,22 @@ Clone this project, open it and the terminal then enter the commands:
   - npm install
   - npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 ```
+
+<!-- Usage of ant-component
+ import { Button } from 'antd';
+import AppButton from './shared/components/button/button';
+
+export const Block = () => {
+return (
+
+<AppButton type="default" />
+<br />
+<Button type="primary" size="middle">
+Button
+</Button>
+<br />
+<Button type="primary" size="large">
+Button
+</Button>
+);
+}; -->
