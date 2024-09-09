@@ -1,9 +1,7 @@
 import { IHeroData } from '../model/types';
 
 export const HeroSlider = ({ hero }: IHeroData) => {
-  const { topic, title, description, mainColor, accentColor, buttonColor } =
-    hero;
-  console.log(mainColor, accentColor, buttonColor);
+  const { topic, title, description } = hero;
 
   return (
     <>
