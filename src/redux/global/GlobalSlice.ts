@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { log } from 'console';
 
 interface GlobalSliceState {
   productTypeListIsOpen: boolean;

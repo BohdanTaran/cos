@@ -2,7 +2,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import Icon from '../../../../../shared/components/Icon';
 import { selectProductTypeListIsOpen } from '../../../../../redux/global/selectors';
 import { toggleProductTypeList } from '../../../../../redux/global/GlobalSlice';
-import { ProductTypes } from '@/src/widgets/BurgerMenu/ProductTypes';
 
 export const Categories = () => {
   const dispatch = useDispatch();
